@@ -1,0 +1,37 @@
+
+
+.header{
+    &-items{
+        .header-item{
+            height: 647px;
+
+            &-title{
+                @include font-s(46);
+                max-width: 542px;
+                line-height: 1.2;
+                margin-bottom: 38px;
+
+                @include breakpoint-down(lg){
+                    @include push--auto;
+                    text-align: center;
+                    max-width: 100%;
+                    @include font-s(42);
+                }
+
+                @include breakpoint-down(sm){
+                    @include font-s(36);
+                }
+
+                @include breakpoint-down(xs){
+                    @include font-s(32);
+                }
+            }
+
+            &-btn{
+                @include breakpoint-down(lg){
+                    @include push--auto;
+                }
+            }
+        }
+    }
+}

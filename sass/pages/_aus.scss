@@ -1,0 +1,42 @@
+.sc-univ{
+    .univ-items{
+        & > div{
+            @include my(17.5px);
+        }
+
+        .univ-item{
+            box-shadow: 0px 10px 20px 0px black(0.1);
+            @include border-radius(10px);
+            @include pos-relative;
+            @include p(32px, 26px, 36px, 26px);
+
+            @include breakpoint-up(sm){
+                @include p(38px, 34px, 46px, 34px);
+            }
+
+            &-img{
+                margin-bottom: 26px;
+
+                &-box{
+                    @include box(89px, 85px);
+                    @include border(black(0.1));
+                    @include py(9px);
+                    @include px(12px);
+                    @include border-radius(10px);
+                }
+            }
+
+            .univ-item-info{
+                &-top{
+                    @include border(black(0.3), 1px, bottom, dashed);
+                }
+
+                &-bottom{
+                    .single-line-list{
+                        margin-bottom: 22px!important;
+                    }
+                }
+            }
+        }
+    }
+}

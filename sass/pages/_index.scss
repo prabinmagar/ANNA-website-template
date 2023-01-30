@@ -1,0 +1,243 @@
+
+
+.sc-index-about{
+    @include py(100px);
+
+    .about-intro-text1{
+        @include my(48px);
+    }
+    .about-intro-text2{
+        margin-left: 150px;
+        max-width: 839px;
+        @include push--auto;
+    }
+}
+
+.sc-sm-banner{
+    min-height: 193px;
+    @include py(20px);
+    .sm-banner-content{
+        text-align: center;
+        max-width: 798px;
+        @include push--auto;
+        .sm-banner-text{
+            @include font-s(46);
+            text-transform: uppercase;
+            line-height: 1.4;
+
+            @include breakpoint-down(lg){
+                @include font-s(36);
+            }
+
+            @include breakpoint-down(sm){
+                @include font-s(28);
+            }
+
+            @include breakpoint-down(xs){
+                @include font-s(20);
+            }
+        }
+    }
+
+    @include breakpoint-down(lg){
+        min-height: 160px;
+    }
+
+    @include breakpoint-down(sm){
+        min-height: 120px;
+    }
+}
+
+.sc-together{
+    min-height: 100vh;
+    @include pos-relative;
+
+    &::after{
+        @include pos-absolute(0, 0, 0, 0);
+        content: "";
+        @include bg-color(black(0.1));
+    }
+
+    @include breakpoint-down(xs){
+        min-height: calc(100vh + 200px);
+    }
+
+    .together-content{
+        @include pos-relative;
+        z-index: 2;
+
+        &-wrapper{
+            @include pos-absolute(null, 0, 0, null);
+            max-width: 632px;
+    
+            .text-box{
+                @include py(60px);
+                @include px(40px);
+                box-shadow: 15px 7px 25px 0px #00000040;
+            }
+
+            @include breakpoint-down(lg){
+                left: 50%;
+                bottom: 50%;
+                transform: translate(-50%, 50%);
+                max-width: 100%;
+                @include w-100;
+            }
+
+            @include breakpoint-down(xs){
+                bottom: calc(50% - 60px);
+            }
+        }
+    }
+}
+
+.sc-faculty{
+    @include py(70px);
+
+    .faculty-list-items{
+        margin-top: 54px;
+
+        .faculty-item{
+            @include py(16px);
+            @include px(37px);
+            box-shadow: 4px 4px 16px 0px #00000026;
+            @include border-radius(5px);
+            @include bg-color(map-get($colors, 'clr-white'));
+            @include my(16.5px);
+            @include transition-default;
+            cursor: pointer;
+
+            &-icon{
+                @include box(52px);
+                @include p-all(15px);
+            }
+
+            &-text{
+                padding-left: 16px;
+            }
+
+            @include grid-template-columns(52px auto);
+
+            &:hover{
+                @include bg-color(map-get($colors, 'clr-primary'));
+                .faculty-item{
+                    &-text *{
+                        color: map-get($colors, 'clr-white')!important;
+                    }
+
+                    &-icon{
+                        filter: invert(1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sc-events{
+    @include py(50px);
+
+    .events-items{
+        margin-top: 50px;
+
+        .pills-item{
+            @include p(5px, 10px, 5px, 10px);
+            @include border-radius(5px);
+        }
+
+        .events-item{
+            box-shadow: 0px 4px 15px 0px #00000026;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            overflow: hidden;
+
+            &-img{
+                @include pos-relative;
+
+                &-text{
+                    @include pos-absolute(50%, null, null, 50%, 20);
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    font-family: Fira Sans;
+                    letter-spacing: 0.05em;
+                }
+
+                &::after{
+                    content: "";
+                    @include pos-absolute(0, 0, 0, 0);
+                    background: #0C0A7ACC;
+                }
+            }
+
+            &-title{
+                @include py(10px);
+                @include my(22px);
+            }
+
+            &-text{
+                @include p(25px, 40px, 32px, 40px);
+            }
+
+            .info-item{
+                &-icon{
+                    @include box(15px);
+                }
+                @include grid-template-columns(16px auto);
+            }
+
+            &-btn{
+                margin-top: 12px;
+            }
+        }
+    }
+}
+
+.sc-gallery{
+    @include py(60px);
+    .gallery-items{
+        margin-top: 40px;
+    }
+}
+
+.sc-msg-banner{
+    @include py(60px);
+
+    .msg-banner-content{
+        .msg-banner{
+            &-title{
+                text-transform: capitalize;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.sc-blogs{
+    @include py(60px);
+    overflow-x: hidden;
+
+    .blogs-items{
+        @include mx(-16.5px);
+        @include pos-relative;
+        @include py(40px);
+
+        .slick-prev{
+            @include pos-absolute(0, null, 10px!important, calc(100% - 100px));
+
+            &::before{
+                color: #C2B9B9!important;
+            }
+        }
+        .slick-next{
+            @include pos-absolute(0, 20px, null, null);
+
+            &::before{
+                color: #C2B9B9!important;
+            }
+        }
+
+        .title-link{
+            @include pos-absolute(0, 0, null, null);
+        }
+    }
+}

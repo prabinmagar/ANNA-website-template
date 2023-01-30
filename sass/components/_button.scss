@@ -1,0 +1,201 @@
+$btn-borderRadius: 0px;
+$btn-default-bgColor: map-get($colors, 'clr-primary');
+$btn-default-textColor: map-get($map: $colors, $key: "clr-white");
+$btn-default-bgColor--highlight: darken(map-get($colors, 'clr-primary'), 10%);
+$btn-default-textColor--hightlight: darken(map-get($colors, 'clr-white'), 10%);
+
+$btn-primary-bgColor: map-get($colors, 'clr-primary');
+$btn-primary-bgColor--highlight: darken(map-get($colors, 'clr-primary'), 10%);
+
+%btn-default{
+    display: inline-block;
+    white-space: nowrap;
+    font-family: inherit;
+    font-size: 100%;
+    cursor: pointer;
+    overflow: visible;
+    @include border-none;
+    @include flush;
+    @include hard--bottom;
+    @include hard--top;
+    text-align: center;
+    user-select: none;
+    @include transition-default;
+}
+
+.btn{
+    @extend %btn-default;
+    @include px(10px);
+    border-radius: $btn-borderRadius;
+    @include bg-color($btn-default-bgColor);
+
+    &,
+    &:link,
+    &:visited{
+        color: $btn-default-textColor;
+    }
+
+    &:hover,
+    &:active,
+    &:focus{
+        @include bg-color($btn-default-bgColor--highlight);
+    }
+
+    &:active,
+    &:focus{
+        outline: none;
+    }
+
+    &.disabled,
+    &[disabled]{
+        cursor: default;
+        background-image: none;
+        opacity: .5;
+    }
+}
+
+.btn-secondary{
+    @include bg-color(map-get($colors, "clr-secondary"));
+
+    &,
+    &:link,
+    &:visited{
+        color: $btn-default-textColor;
+    }
+
+    &:hover,
+    &:active,
+    &:focus{
+        color: $btn-default-textColor;
+        @include bg-color(darken(map-get($colors, "clr-secondary"), 10%));
+    }
+}
+
+
+// btn rounded 
+.btn-rounded{
+    @extend %btn-default;
+
+    &-white{
+        @include font-w('semi-bold');
+        @include py(5px);
+        @include px(16px);
+        @include border-radius(15px);
+        color: map-get($colors, 'clr-primary-v1');
+
+        &:hover{
+            transform: scale(1.04);
+        }
+    }
+}
+
+.btn-lg{
+    @include bg-transparent;
+    @include py(15px);
+    @include px(20px);
+    @include border-radius(20px);
+    @include border(map-get($colors, 'clr-white'));
+    cursor: pointer;
+    @include transition-default;
+    display: none;
+
+    &-text{
+        letter-spacing: $paragraph-letter-spacing;
+        @include font-s(16);
+    }
+
+    &-icon{
+        margin-left: 19px;
+    }
+
+    &:hover{
+        @include bg-color(map-get($colors, 'clr-white')!important);
+
+        .btn-lg{
+            &-text, &-icon{
+                color: map-get($colors, 'clr-primary')!important;
+            }
+        }
+    }
+
+    &-grey{
+        border-color: black(0.1);
+
+        .btn-lg-text{
+            color: map-get($colors, 'clr-black');
+        }
+    }
+}
+
+.btn-blank{
+    @include bg-transparent;
+    @include border-none;
+    cursor: pointer;
+
+    &-text{
+        color: map-get($colors, 'clr-black');
+        @include opacity(0.7);
+        @include font-w(400);
+        margin-right: 11px;
+        @include transition-default;
+
+        &:hover{
+            @include opacity(1);
+        }
+    }
+    &-icon{
+        color: map-get($colors, 'clr-primary');
+    }
+}
+
+// button outline
+.btn-outline{
+    @include py(7px);
+    @include px(15px);
+    min-width: 112px;
+    @include bg-transparent;
+    @include border-radius(2.6px);
+    cursor: pointer;
+    text-align: left;
+    @include transition-default;
+}
+.btn-outline-gray84-lt{
+    border: 0.65px solid #D6D6D6;
+    color: map-get($colors, 'clr-gray84');
+
+    &:hover{
+        @include bg-color(map-get($colors, 'clr-gray84')!important);
+        color: map-get($colors, 'clr-white')!important;
+    }
+}
+
+.btn-outline-malachite{
+    border: 0.65px solid map-get($colors, 'clr-malachite');
+    color: map-get($colors, 'clr-malachite');
+
+    &:hover{
+        @include bg-color(map-get($colors, 'clr-malachite')!important);
+        color: map-get($colors, 'clr-white')!important;
+    }
+}
+
+// bordered buttons
+.btn-bordered{
+    box-shadow: 4px 4px 16px 0px #00000026;
+    @include border(map-get($colors, 'clr-primary-v1'));
+    @include py(10px);
+    @include px(11px);
+    @include border-radius(5px);
+    min-width: 251px;
+
+    &-icon{
+        margin-left: 70px;
+    }
+
+    &:hover{
+        @include bg-color(map-get($colors, 'clr-primary-v1'));
+        .btn-bordered-text, .btn-bordered-icon{
+            color: map-get($colors, 'clr-white');
+        }
+    }
+}

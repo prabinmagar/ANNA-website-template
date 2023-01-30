@@ -1,0 +1,79 @@
+/* GLOBAL COLOR PALETTE */
+
+/* ==== Generic colors ==== */
+$colors: (
+    // white color variants
+    clr-cultured: #F1F3F6,
+    clr-white: #fff,
+    clr-light-white: #fcfcfc,
+    // black color
+    clr-black: #000,
+    // yale blue color variants
+    clr-yale-blue: #174A8B,
+    clr-yale-blue-5: rgba(23, 74, 139, 0.05),
+    clr-yale-blue-10: rgba(12, 10, 122, 0.102),
+    clr-celtic-blue: #216BCA,
+    // jet color variants
+    clr-jet: #30323D,
+    clr-jet-20: rgba(48, 50, 61, 0.2),
+    // Misc colors
+    clr-eerie-black: #262626,
+    clr-pink: #FECAD3,
+    clr-navy-blue: #0C0A7A,
+    clr-sizzling-red: #FA234D,
+    clr-baby-blue-eyes: #ABCEFA,
+    clr-silver-chalice: #ABABAB,
+    clr-amber: #F97C00,
+    clr-malachite: #15DC52,
+    clr-crayola: #1676F1,
+    clr-granite-gray: #676767,
+    clr-black-05: rgba(0, 0, 0, 0.5),
+    clr-gray84: #d6d6d6,
+    clr-oxford-blue: #062144,
+
+    /* ==== Color Scheme ==== */
+    clr-primary: #0C0A7A,
+    clr-primary-v1: #174A8B,
+    clr-secondary: rgba(23, 74, 139, 0.05),
+    clr-dark: #262626
+);
+
+/* ==== Common colors ==== */
+$heading-color: map-get($colors, "clr-errie-black");
+$text-color: map-get($colors, "clr-black");
+
+/* ==== 3rd party brand colors ==== */
+$clr-facebook: #113CD6;
+$clr-instagram: #FE1239;
+$clr-twitter: #2C7AD6;
+
+/* ==== Links colors ==== */
+$clr-link-default: #000;
+$clr-link-visited: lighten(#000, 15%);
+$clr-link-hover: lighten(#000, 15%);
+$clr-link-active: lighten(#000, 15%);
+
+/* ==== <hr> border colors ==== */
+$hr-clr: lighten(#000, 70%);
+
+//Darker/lighter amount
+// $siimple-colors-amount: 10%;
+// $siimple-colors-extra-amount: 20%;
+
+//Colors palette
+// $siimple-colors: (
+//     "navy": (
+//         "extra-dark": darken($siimple-colors-navy, $siimple-colors-extra-amount),
+//         "dark": darken($siimple-colors-navy, $siimple-colors-amount),
+//         "base": $siimple-colors-navy, 
+//         "light": lighten($siimple-colors-navy, $siimple-colors-amount),
+//         "extra-light": lighten($siimple-colors-navy, $siimple-colors-extra-amount)
+//     ),
+//     "green": (
+//         "extra-dark": darken($siimple-colors-green, $siimple-colors-extra-amount),
+//         "dark": darken($siimple-colors-green, $siimple-colors-amount),
+//         "base": $siimple-colors-green, 
+//         "light": lighten($siimple-colors-green, $siimple-colors-amount),
+//         "extra-light": lighten($siimple-colors-green, $siimple-colors-extra-amount)
+//     ),
+// )

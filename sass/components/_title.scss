@@ -1,0 +1,59 @@
+
+%title{
+    @include font($font-family-notosans);
+    color: $heading-color;
+}
+
+.title{
+    &-sm{
+        @extend %title;
+        @include font-w("bold");
+        @include font-s(18, normal, 0.05);
+        @include breakpoint-up(sm){ @include font-s(20);}
+        @include breakpoint-up(lg){@include font-s(24)}
+        @include breakpoint-up(xxl){@include font-s(26);}
+    }
+    &-base{
+        @extend %title;
+        @include font-w("bold");
+        @include font-s(24, normal, 0.05);
+        @include breakpoint-up(sm){ @include font-s(28);}
+        @include breakpoint-up(lg){@include font-s(32)}
+        @include breakpoint-up(xxl){@include font-s(36);}
+    }
+
+    &-lg{
+        @extend %title;
+        @include font-w("extra-bold");
+        @include font-s(28, normal, 0.03em);
+        @include breakpoint-up(sm){ @include font-s(32);}
+        @include breakpoint-up(lg){@include font-s(36)}
+        @include breakpoint-up(xxl){@include font-s(45);}
+    }
+}
+
+.sc-top-info{
+    display: flex!important;
+    @include align-items(center);
+
+    &-line{
+        @include box(92px, 2px);
+        @include bg-color(black(0.25));
+        margin-right: 13px;
+    }
+    &-text{
+        color: map-get($colors, 'clr-primary-v1');
+    }
+}
+
+.title-link{
+    color: map-get($colors, 'clr-navy-blue')!important;
+    font-family: $font-family-notosans;
+}
+
+.title-box{
+    min-height: 55px;
+    min-width: 273px;
+    @include d-inline-flex;
+    @include flex-center;
+}

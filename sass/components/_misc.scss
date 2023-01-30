@@ -1,0 +1,22 @@
+// filter and search
+.filter-search{
+
+}
+
+// pagination
+.pagination{
+    .page-link{
+        @include box(36px);
+        @include border-r-none;
+        @include mx(7px);
+        @include flex-center;
+        @include font-w(700);
+        @include font-s(15);
+        @include border(#BDBFC2);
+
+        &:hover{
+            @include bg-color(map-get($colors, 'clr-primary-v1'));
+            color: map-get($colors, 'clr-white');
+        }
+    }
+}

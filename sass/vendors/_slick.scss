@@ -1,0 +1,29 @@
+%slider-default{
+    transform: scale(1.5);
+    z-index: 10!important;
+}
+
+.header-slider{
+    @include pos-relative;
+}
+.slick-prev{
+    @include pos-absolute(50%, null, null, 50px);
+    @extend %slider-default;
+
+    @include breakpoint-down(lg){
+        left: 25px;
+    }
+}
+
+.slick-next{
+    @include pos-absolute(50%, 50px, null, null);
+    @extend %slider-default;
+
+    &::before{
+        @include opacity(0.6);
+    }
+
+    @include breakpoint-down(lg){
+        right: 25px;
+    }
+}

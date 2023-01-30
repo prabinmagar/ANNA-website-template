@@ -1,0 +1,21 @@
+a{
+    @include transition-default;
+
+    &, &:link{
+        color: $clr-link-default;
+        text-decoration: none;
+    }
+
+    &:visited{
+        color: $clr-link-visited;
+        text-decoration: none;
+    }
+
+    &:hover, &:focus{
+        color: $clr-link-hover;
+    }
+
+    &:active{
+        color: $clr-link-active;
+    }
+}

@@ -1,0 +1,170 @@
+.page-navbar{
+    .navbar-top{
+        @include py(10px);
+        .navbar-brand{
+            max-width: 180px;
+            @include breakpoint-up(sm){
+                max-width: 200px;
+            }
+            @include breakpoint-up(lg){
+                max-width: 235px;
+            }
+        }
+
+        &-right{
+            .navbar-top-social-links{
+                @include py(10px);
+                li{
+                    a{
+                        @include mx(8px);
+                        @include font-s(20);
+
+                        @include breakpoint-up(sm){
+                            @include font-s(24);
+                        }
+                        @include breakpoint-up(sm){
+                            @include font-s(28);
+                        }
+                    }
+                }
+
+                @include breakpoint-up(sm){
+                    @include hard--ends;
+                }
+
+                @include breakpoint-down(sm){
+                    @include hard--bottom;
+                }
+            }
+
+            .navbar-top-info{
+                .navbar-top-info-item{
+                    @include grid-template-columns(32px auto);
+                    @include align-items(center);
+                    column-gap: 20px;
+                }
+
+                @include breakpoint-up(lg){
+                    margin-left: 32px;
+                }
+            }
+
+            @include breakpoint-down(lg){
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+
+    .navbar-main{
+        @include py(21px);
+        @include pos-relative;
+        @include transition-default;
+        
+        .nav-items-list{
+            .nav-item{
+                margin-right: 32px;
+
+                .nav-link{
+                    color: map-get($map: $colors, $key: "clr-white");
+                    &:hover{
+                        z-index: 10;
+                    }
+                }
+
+                .nav-dropdown{
+                    @include bg-transparent;
+                    @include border-none;
+                    cursor: pointer;
+                    @include pos-relative;
+
+                    &-menu{
+                        @include pos-absolute(calc(100% + 10px), 0, null, null, 10);
+                        @include bg-color(map-get($colors, 'clr-primary-v1'));
+                        @include border(white(0.1));
+                        @include border-radius(4px);
+                        @include d-none;
+
+                        li{
+                            text-align: left;
+                            a{
+                                color: map-get($colors, 'clr-white');
+                            }
+                        }
+
+                        &-show{
+                            @include d-block;
+                        }
+                    }
+                }
+
+                @include breakpoint-up(lg){
+                    margin-right: 20px;
+                }
+
+                @include breakpoint-up(xxl){
+                    margin-right: 28px;
+                }
+            }
+        }
+
+        @include breakpoint-down(lg){
+            @include pos-fixed(0, 0, 0, null, 999);
+            width: 320px;
+
+            &-wrapper{
+                @include flex-direction(column);
+                @include align-items(flex-start!important);
+                margin-top: 40px;
+                margin-left: 16px;
+            }
+
+            .nav-item{
+                @include my(10px);
+            }
+
+            .navbar-main-btn{
+                margin-top: 18px;
+            }
+
+            @include breakpoint-down(xs){
+                @include w-100;
+            }
+        }
+
+        @include breakpoint-down(lg){
+            transform: translateX(100%);
+        }
+    }
+
+    // show navbar on mob screen
+    .navbar-main-show{
+        transform: translateX(0);
+    }
+
+    .navbar-close-btn{
+        @include box(32px);
+        @include border-r-circle;
+        @include border(map-get($colors, 'clr-white'));
+        @include pos-absolute(20px, 20px, null, null);
+        cursor: pointer;
+        @include transition-default;
+
+        &:hover{
+            @include bg-transparent;
+            color: map-get($colors, 'clr-white');
+        }
+    }
+
+    .navbar-open-btn{
+        @include bg-transparent;
+        @include border-none;
+        transform: scaleX(1.4);
+        @include font-s(22);
+        cursor: pointer;
+        @include transition-default;
+
+        &:hover{
+            color: map-get($colors, 'clr-primary');
+        }
+    }
+}

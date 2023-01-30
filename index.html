@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS Library -->
+        <link rel = "stylesheet" href = "node_modules/@fortawesome/fontawesome-free/css/all.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+        <link rel = "stylesheet" href = "node_modules/slick-carousel/slick/slick-theme.css">
+        <link rel = "stylesheet" href = "node_modules/slick-carousel/slick/slick.css">
+        <!-- links to custom styles -->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <style>
+        </style>
+    </head>
+    <body id = "page-top">
+        <div id = "page-wrapper">
+            <!-- navbar section -->
+            <nav class = "page-navbar">
+                <div class = "navbar-top bg-cultured px-3">
+                    <div class = "container">
+                        <div class = "navbar-top-content d-lg-flex">
+                            <div class = "mx-auto ms-lg-0 d-flex align-items-center justify-content-between mb-2 mb-lg-0">
+                                <a href = "#" class = "navbar-brand">
+                                    <img src = "assets/images/site-logos/logo.svg" alt = "site logo">
+                                </a>
+                                <button type = "button" class = "navbar-open-btn d-lg-none">
+                                    <i class = "fas fa-bars"></i>
+                                </button>
+                            </div>
+
+                            <div class = "navbar-top-right d-sm-flex justify-content-sm-between align-items-sm-center pt-sm-2">
+                                <ul class = "navbar-top-social-links d-flex align-items-center justify-content-center">
+                                    <li><a href = "#" class = "icon-facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+                                    <li><a href = "#" class = "icon-instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href = "#" class = "icon-twitter"><i class="fa-brands fa-square-twitter"></i></a></li>
+                                </ul>
+
+                                <ul class = "navbar-top-info d-flex align-items-center justify-content-center d-none d-sm-flex">
+                                    <li class = "navbar-top-info-item me-3">
+                                        <span class = "info-icon icon-base fs-xx-sm">
+                                            <i class="fa-solid fa-phone-volume"></i>
+                                        </span>
+                                        <div class = "info-text d-flex flex-column flex-sm-row flex-lg-column">
+                                            <span class = "fw-5 p-text-sm text-dark d-block">01-5647322,&nbsp;</span>
+                                            <span class = "fw-5 p-text-sm text-dark d-block">9851063582</span>
+                                        </div>
+                                    </li>
+                                    <li class = "navbar-top-info-item">
+                                        <span class = "info-icon icon-base fs-xx-sm">
+                                            <i class="fa-solid fa-user"></i>
+                                        </span>
+                                        <div class = "info-text">
+                                            <span class = "fw-5 p-text-sm text-dark">Member</span>
+                                            <span class = "fs-13 ms-2">
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "navbar-main bg-primary-v1 px-3">
+                    <button type = "button" class = "navbar-close-btn d-lg-none">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <div class = "container navbar-main-wrapper d-flex align-items-center justify-content-between">
+                        <ul class = "nav-items-list d-flex align-items-lg-center flex-lg-wrap flex-column flex-lg-row">
+                            <li class = "nav-item">
+                                <a href = "#" class = "nav-link fw-5 p-text-sm no-wrap">Home</a>
+                            </li>
+                            <li class = "nav-item">
+                                <a href = "#" class = "nav-link fw-5 p-text-sm no-wrap">Executive Board</a>
+                            </li>
+                            <li class = "nav-item">
+                                <a href = "#" class = "nav-link fw-5 p-text-sm no-wrap">Members/Alumni</a>
+                            </li>
+                            <li class = "nav-item">
+                                <button type = "button" class = "nav-link fw-5 p-text-sm no-wrap nav-dropdown">
+                                    Australia Links 
+                                    <span class = "nav-link-icon">
+                                        <i class = "fas fa-chevron-down"></i>
+                                    </span>
+
+                                    <ul class = "nav-dropdown-menu p-2">
+                                        <li class = "my-1">
+                                            <a href = "#" class = "fw-4">Australian Global Alumni</a>
+                                        </li>
+                                        <li class = "my-1">
+                                            <a href = "#" class = "fw-4">Australian Embassy Nepal</a>
+                                        </li>
+                                    </ul>
+                                </button>
+                            </li>
+    
+                            <li class = "nav-item">
+                                <button type = "button" class = "nav-link fw-5 p-text-sm no-wrap nav-dropdown">
+                                    For Students
+                                    <span class = "nav-link-icon">
+                                        <i class = "fas fa-chevron-down"></i>
+                                    </span>
+
+                                    <ul class = "nav-dropdown-menu p-2">
+                                        <li class = "my-1">
+                                            <a href = "#" class = "fw-4">Study in Australia</a>
+                                        </li>
+                                        <li class = "my-1">
+                                            <a href = "#" class = "fw-4">Australian University</a>
+                                        </li>
+                                        <li class = "my-1">
+                                            <a href = "#" class = "fw-4">Student Visa</a>
+                                        </li>
+                                    </ul>
+                                </button>
+                            </li>
+                            <li class = "nav-item">
+                                <a href = "#" class = "nav-link fw-5 p-text-sm no-wrap">Gallery</a>
+                            </li>
+                            <li class = "nav-item">
+                                <a href = "#" class = "nav-link fw-5 p-text-sm no-wrap">Event</a>
+                            </li>
+                            <li class = "nav-item">
+                                <a href = "#" class = "nav-link fw-5 p-text-sm no-wrap">Blogs</a>
+                            </li>
+                            <li class = "nav-item">
+                                <a href = "#" class = "nav-link fw-5 p-text-sm no-wrap">Job Portal</a>
+                            </li>
+                        </ul>
+                        <button type = "type" class = "btn-rounded btn-rounded-white ms-lg-4 ms-lg-2 navbar-main-btn">Invite Member</button>
+                    </div>
+                </div>
+            </nav>
+            <!-- navbar section -->
+
+            <!-- header section -->
+            <header class = "header">
+                <div class = "header-items header-slider w-100">
+                    <div class = "header-item d-flex align-items-center" style = "background: url('assets/images/pg_index/header-banner.png') center/cover no-repeat;">
+                        <div class = "container">
+                            <div class = "header-item-content">
+                                <h1 class = "header-item-title text-white fw-7">Building a relationship and exchange of experience and opportunities</h1>
+                                <button type = "button" class = "btn-lg header-item-btn d-flex align-items-center">
+                                    <span class = "btn-lg-text text-white fw-6">Become a part of our mission</span>
+                                    <span class = "btn-lg-icon text-white">
+                                        <i class = "fas fa-chevron-right"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "header-item d-flex align-items-center" style = "background: url('assets/images/pg_index/header-banner-2.png') center/cover no-repeat;">
+                        <div class = "container">
+                            <div class = "header-item-content">
+                                <h1 class = "header-item-title text-white fw-7">Building a relationship and exchange of experience and opportunities</h1>
+                                <button type = "button" class = "btn-lg header-item-btn d-flex align-items-center">
+                                    <span class = "btn-lg-text text-white fw-6">Become a part of our mission</span>
+                                    <span class = "btn-lg-icon text-white">
+                                        <i class = "fas fa-chevron-right"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- header section -->
+
+            <!-- section one  -->
+            <section class = "sc-index-about px-3">
+                <div class = "container">
+                    <div class = "index-about-content">
+                        <div class = "sc-top-info">
+                            <div class = "sc-top-info-line"></div>
+                            <div class = "sc-top-info-text fw-8">Who are we ?</div>
+                        </div>
+
+                        <div class = "about-intro-text1">
+                            <p class = "fw-7 p-text-xxx-lg text-md-justify">The Association of Nepalese Alumni from Australia(ANAA) is a non-government, non-political and non-profit organization of professionals who graduated from various universities or educational institutions of Australia.</p>
+                        </div>
+                        <div class = "about-intro-text2">
+                            <p class = "p-text-x-lg text-md-justify bottom-overflow-fade">It was established in 1998 (2055 B.S). ANAA is acclaimed for fostering and strengthening cordial and mutually beneficial relationship among its member in Nepal and Australia. ANAA aims to establish long term relationships with like-minded organizations and associations for the benefit of exchange of experience and opportunities created and shared ... READ MORE
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section one  -->
+
+            <section class = "sc-sm-banner d-flex align-items-center justify-content-center px-3" style = "background: url('assets/images/pg_index/short_banner.png') center/cover no-repeat">
+                <div class = "container">
+                    <div class = "sm-banner-content">
+                        <h3 class = "text-white sm-banner-text">be together & share experience and opportunities</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class = "py-5 px-3">
+                <div class = "container">
+                    <div class = "col-2-block pt-md-5 pb-md-3">
+                        <div class = "row align-items-center">
+                            <div class = "block-img col-xl-6 img-cover pe-xl-4">
+                                <img src = "assets/images/pg_index/submit your certificate.png" alt = "">
+                            </div>
+                            <div class = "block-text col-xl-6 mt-4 mt-xl-0 px-xl-4">
+                                <h3 class = "title-lg mb-4">Submit your award certificate</h3>
+                                <p class = "p-text-x-lg">It was established in 1998 (2055 B.S). ANAA is acclaimed for fostering and strengthening cordial and mutually beneficial relationship among its member in Nepal and Australia. ANAA aims to establish long term</p>
+
+                                <button type = "button" class = "btn-lg btn-lg-grey d-flex align-items-center">
+                                    <span class = "btn-lg-text text-white fw-6">Join alumni family</span>
+                                    <span class = "btn-lg-icon text-white">
+                                        <i class = "fas fa-chevron-right"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-2-block pt-md-3 pb-md-5">
+                        <div class = "row">
+                            <div class = "block-text col-xl-6 mt-4 mt-xl-0 pe-xl-4">
+                                <div class = "mb-3">
+                                    <h3 class = "title-lg mb-4">Vision</h3>
+                                    <p class = "p-text-x-lg">It was ANAA is acclaimed for fostering and strengthening cordial and mutually beneficial relationship among its members, Nepal and Australia.</p>
+                                </div>
+                                <div>
+                                    <h3 class = "title-lg mb-4">Mission</h3>
+                                    <p class = "p-text-x-lg">ANAA reaches and connects for meaningful relationship among its members, Nepal and Australia.</p>
+                                </div>
+                            </div>
+                            <div class = "block-img col-xl-6 img-cover ps-xl-4 mt-4 mt-xl-0">
+                                <img src = "assets/images/pg_index/submit your certificate.png" alt = "">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section together -->
+            <section class = "sc-together h-100 px-3" style = "background: url('assets/images/pg_index/years\ together.png') center/cover no-repeat;">
+                <div class = "container vh-100">
+                    <div class = "together-content vh-100">
+                        <div class = "together-content-wrapper">
+                            <h3 class = "title-lg text-white">61 Year Together</h3>
+                            <div class = "text-box bg-white mt-4">
+                                <p class = "p-text-base">10th August 2021 – ANAA in collaboration with the Australian Embassy Nepal was able to virtually launch this book 61 Years Together. This book aims to present the readers with perspectives and stories of people whose actions have played a role in bringing the two countries together, and have sown the seeds of success for the future. It is an attempt to highlight different industries and sectors that have been touched and advanced by the cross-pollination of ideas, and professionals who are associated with Nepal-Australia. We hope that this book will give our readers a flavor of the achievements that the two countries should take pride in celebrating.</p>
+                                <div class = "mt-4">
+                                    <p class = "text-dark fw-7 p-text-base">Ananta Poudyal </p>
+                                    <p class = "p-text-base">Mas International relations – Monash University </p>
+                                    <p>Association of Nepalese Alumni From Australia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of section together -->
+
+
+            <!-- faculty -->
+            <section class = "sc-faculty px-3">
+                <div class = "container">
+                    <div class = "faculty-content">
+                        <h3 class = "title-lg text-dark">Faculty</h3>
+
+                        <div class = "faculty-list-items row">
+                            <div class = "col-md-6 col-xl-4">
+                                <div class = "faculty-item">
+                                    <div class = "faculty-item-icon">
+                                        <img src = "assets/images/pg_index/fac-icon-1.svg" alt = "">
+                                    </div>
+                                    <div class = "faculty-item-text d-flex align-items-center justify-content-between">
+                                        <span class = "p-text-x-lg fw-4 ls-heading">Computer Science</span>
+                                        <span class = "icon">
+                                            <i class = "fas fa-chevron-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class = "col-md-6 col-xl-4">
+                                <div class = "faculty-item">
+                                    <div class = "faculty-item-icon">
+                                        <img src = "assets/images/pg_index/fac-icon-2.svg" alt = "">
+                                    </div>
+                                    <div class = "faculty-item-text d-flex align-items-center justify-content-between">
+                                        <span class = "p-text-x-lg fw-4 ls-heading">Business Studies</span>
+                                        <span class = "icon">
+                                            <i class = "fas fa-chevron-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class = "col-md-6 col-xl-4">
+                                <div class = "faculty-item">
+                                    <div class = "faculty-item-icon">
+                                        <img src = "assets/images/pg_index/fac-icon-3.svg" alt = "">
+                                    </div>
+                                    <div class = "faculty-item-text d-flex align-items-center justify-content-between">
+                                        <span class = "p-text-x-lg fw-4 ls-heading">Law</span>
+                                        <span class = "icon">
+                                            <i class = "fas fa-chevron-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class = "col-md-6 col-xl-4">
+                                <div class = "faculty-item">
+                                    <div class = "faculty-item-icon">
+                                        <img src = "assets/images/pg_index/fac-icon-4.svg" alt = "">
+                                    </div>
+                                    <div class = "faculty-item-text d-flex align-items-center justify-content-between">
+                                        <span class = "p-text-x-lg fw-4 ls-heading">Engineering</span>
+                                        <span class = "icon">
+                                            <i class = "fas fa-chevron-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class = "col-md-6 col-xl-4">
+                                <div class = "faculty-item">
+                                    <div class = "faculty-item-icon">
+                                        <img src = "assets/images/pg_index/fac-icon-5.svg" alt = "">
+                                    </div>
+                                    <div class = "faculty-item-text d-flex align-items-center justify-content-between">
+                                        <span class = "p-text-x-lg fw-4 ls-heading">Health</span>
+                                        <span class = "icon">
+                                            <i class = "fas fa-chevron-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class = "col-md-6 col-xl-4">
+                                <div class = "faculty-item">
+                                    <div class = "faculty-item-icon">
+                                        <img src = "assets/images/pg_index/fac-icon-6.svg" alt = "">
+                                    </div>
+                                    <div class = "faculty-item-text d-flex align-items-center justify-content-between">
+                                        <span class = "p-text-x-lg fw-4 ls-heading">Medical Science</span>
+                                        <span class = "icon">
+                                            <i class = "fas fa-chevron-right"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type = "button" class = "btn-blank mt-4">
+                            <span class = "btn-blank-text p-text-lg">Load More Faculties</span>
+                            <span class = "btn-blank-icon">
+                                <i class = "fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- end of faculty -->
+
+            <!-- events -->
+            <section class = "sc-events px-3">
+                <div class = "container">
+                    <div class = "events-content">
+                        <div class = "sc-top-info mb-4">
+                            <div class = "sc-top-info-line"></div>
+                            <div class = "sc-top-info-text fw-8">Who are we ?</div>
+                        </div>
+
+                        <h3 class = "title-lg text-dark">Stay in touch</h3>
+                        <div class = "events-items row">
+                            <div class = "col-md-6 col-xl-4 mb-4">
+                                <div class = "events-item">
+                                    <div class = "events-item-img">
+                                        <h4 class = "text-white events-item-img-text title-sm fw-8">ChampaDevi Hiking Event (IAC)</h4>
+                                        <img src = "assets/images/pg_index/event-img.png" alt = "">
+                                    </div>
+                                    <div class = "events-item-text">
+                                        <div class = "d-flex align-items-center flex-wrap pills-group">
+                                            <div class = "pills-item fs-13 text-black-05 fw-6 border-dashed-black-05 me-3 font-notosans">Text</div>
+    
+                                            <div class = "pills-item border-dashed-amber">
+                                                <span class = "pills-item-icon fs-13 text-amber">
+                                                    <i class = "fas fa-hourglass"></i>
+                                                </span>
+                                                <span class = "fs-13 text-amber fw-6 ms-1 font-notosans">Expired</span>
+                                            </div>
+                                        </div>
+                                        <div class = "events-item-title">
+                                            <h3 class = "op-09 ls-05">ChampaDevi Hiking Event (IAC)</h3>
+                                        </div>
+                                        <div class = "events-item-info">
+                                            <div class = "info-item d-grid align-items-center mb-1">
+                                                <span class = "info-item-icon d-inline-block">
+                                                    <img src = "assets/images/icons/calendar.svg" alt = "">
+                                                </span>
+                                                <span class = "info-item-text fw-6 text-granite-gray p-text-sm ms-1">22nd December 2022</span>
+                                            </div>
+    
+                                            <div class = "info-item align-items-center mb-1">
+                                                <span class = "info-item-icon">
+                                                    <img src = "assets/images/icons/location.svg" alt = "">
+                                                </span>
+                                                <span class = "info-item-text fw-6 text-granite-gray p-text-sm ms-1">Hyatt Regency, taragaun Boudhha</span>
+                                            </div>
+                                        </div>
+    
+                                        <button type = "button" class = "btn-outline btn-outline-gray84-lt events-item-btn fw-6">Text</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class = "col-md-6 col-xl-4 mb-4">
+                                <div class = "events-item">
+                                    <div class = "events-item-img">
+                                        <h4 class = "text-white events-item-img-text title-sm fw-8">ChampaDevi Hiking Event (IAC)</h4>
+                                        <img src = "assets/images/pg_index/event-img.png" alt = "">
+                                    </div>
+                                    <div class = "events-item-text">
+                                        <div class = "d-flex align-items-center flex-wrap pills-group">
+                                            <div class = "pills-item fs-13 text-black-05 fw-6 border-dashed-black-05 me-3 font-notosans">Conference</div>
+    
+                                            <div class = "pills-item border-dashed-malachite">
+                                                <span class = "pills-item-icon fs-13 text-malachite">
+                                                    <i class = "fas fa-hourglass"></i>
+                                                </span>
+                                                <span class = "fs-13 text-malachite fw-6 ms-1 font-notosans">Text</span>
+                                            </div>
+                                        </div>
+                                        <div class = "events-item-title">
+                                            <h3 class = "op-09 ls-05">ChampaDevi Hiking Event (IAC)</h3>
+                                        </div>
+                                        <div class = "events-item-info">
+                                            <div class = "info-item d-grid align-items-center mb-1">
+                                                <span class = "info-item-icon d-inline-block">
+                                                    <img src = "assets/images/icons/calendar.svg" alt = "">
+                                                </span>
+                                                <span class = "info-item-text fw-6 text-granite-gray p-text-sm ms-1">22nd December 2022</span>
+                                            </div>
+    
+                                            <div class = "info-item align-items-center mb-1">
+                                                <span class = "info-item-icon">
+                                                    <img src = "assets/images/icons/location.svg" alt = "">
+                                                </span>
+                                                <span class = "info-item-text fw-6 text-granite-gray p-text-sm ms-1">Hyatt Regency, taragaun Boudhha</span>
+                                            </div>
+                                        </div>
+    
+                                        <button type = "button" class = "btn-outline btn-outline-malachite events-item-btn fw-6">Reserve Seat</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class = "col-md-6 col-xl-4">
+                                <div class = "events-item">
+                                    <div class = "events-item-img">
+                                        <h4 class = "text-white events-item-img-text title-sm fw-8">ChampaDevi Hiking Event (IAC)</h4>
+                                        <img src = "assets/images/pg_index/event-img.png" alt = "">
+                                    </div>
+                                    <div class = "events-item-text">
+                                        <div class = "d-flex align-items-center flex-wrap pills-group">
+                                            <div class = "pills-item fs-13 text-black-05 fw-6 border-dashed-black-05 me-3 font-notosans">Text</div>
+    
+                                            <div class = "pills-item border-dashed-amber">
+                                                <span class = "pills-item-icon fs-13 text-amber">
+                                                    <i class = "fas fa-hourglass"></i>
+                                                </span>
+                                                <span class = "fs-13 text-amber fw-6 ms-1 font-notosans">Expired</span>
+                                            </div>
+                                        </div>
+                                        <div class = "events-item-title">
+                                            <h3 class = "op-09 ls-05">ChampaDevi Hiking Event (IAC)</h3>
+                                        </div>
+                                        <div class = "events-item-info">
+                                            <div class = "info-item d-grid align-items-center mb-1">
+                                                <span class = "info-item-icon d-inline-block">
+                                                    <img src = "assets/images/icons/calendar.svg" alt = "">
+                                                </span>
+                                                <span class = "info-item-text fw-6 text-granite-gray p-text-sm ms-1">22nd December 2022</span>
+                                            </div>
+    
+                                            <div class = "info-item align-items-center mb-1">
+                                                <span class = "info-item-icon">
+                                                    <img src = "assets/images/icons/location.svg" alt = "">
+                                                </span>
+                                                <span class = "info-item-text fw-6 text-granite-gray p-text-sm ms-1">Hyatt Regency, taragaun Boudhha</span>
+                                            </div>
+                                        </div>
+    
+                                        <button type = "button" class = "btn-outline btn-outline-gray84-lt events-item-btn fw-6">Text</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of events -->
+
+            <!-- gallery -->
+            <section class = "sc-gallery px-3">
+                <div class = "container">
+                    <div class = "gallery-content">
+                        <div class = "d-flex align-items-center justify-content-between">
+                            <h3 class = "title-lg text-dark">Gallery</h3>
+                            <a href = "#" class = "title-link fw-6 p-text-lg ls-para d-flex align-items-center justify-content-between">
+                                <span>View All</span>
+                                <span class = "ms-2 title-link-icon p-text-sm text-navy-blue">
+                                    <i class = "fas fa-chevron-right"></i>
+                                    <i class = "fas fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class = "gallery-items row">
+                            <div class = "col-md-6 col-lg-4">
+                                <div class = "gallery-item">
+                                    <img src = "assets/images/pg_index/gallery-img-1.png" alt = "">
+                                    <div class = "gallery-item-text">
+                                        <p class = "fw-6 text-white p-text-sm">IAC Kathmandu December 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "col-md-6 col-lg-4">
+                                <div class = "gallery-item">
+                                    <img src = "assets/images/pg_index/gallery-img-1.png" alt = "">
+                                    <div class = "gallery-item-text">
+                                        <p class = "fw-6 text-white p-text-sm">IAC Kathmandu December 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "col-md-6 col-lg-4">
+                                <div class = "gallery-item">
+                                    <img src = "assets/images/pg_index/gallery-img-1.png" alt = "">
+                                    <div class = "gallery-item-text">
+                                        <p class = "fw-6 text-white p-text-sm">IAC Kathmandu December 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of gallery -->
+
+            <section class = "sc-msg-banner d-flex align-items-center justify-content-center px-3 bg-oxford-blue">
+                <div class = "container">
+                    <div class = "msg-banner-content d-flex align-items-center justify-content-between flex-column flex-lg-row">
+                        <h3 class = "text-white title-lg msg-banner-title">Accepting New Allumni Now</h3>
+
+                        <a href = "#" class = "btn-lg btn-lg-white d-flex align-items-center msg-banner-btn mt-4 mt-lg-0">
+                            <span class = "btn-lg-text text-white fw-6">become a part of our mission</span>
+                            <span class = "btn-lg-icon text-white">
+                                <i class = "fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- blog -->
+            <section class = "sc-blogs px-3">
+                <div class = "container">
+                    <div class = "blogs-content">
+                        <h3 class = "title-lg msg-banner-title text-dark">Blogs</h3>
+                    </div>
+
+                    <div class = "blogs-items blogs-slider">
+                        <div class = "card-item">
+                            <div class = "card-item-img img-cover">
+                                <img src = "assets/images/pg_index/blog-img-1.png" alt = "">
+                            </div>
+                            <div class = "card-item-body">
+                                <h4 class = "card-item-title title-sm">Association of Nepalese Alumni from Australia.</h4>
+                                <div class = "card-item-info fs-12 ls-para">10th August 2021</div>
+                                <p class = "p-text-sm text-justify">ANAA in collaboration with the Australian Embassy Nepal was able to virtually launch this book 61 Years Together. This book aims to present the readers with perspectives and stories of ...</p>
+                                <a href = "#" class = "font-firasans fw-4 fs-12 ls-05 card-item-link">Read More ...</a>
+                            </div>
+                        </div>
+
+                        <div class = "card-item">
+                            <div class = "card-item-img img-cover">
+                                <img src = "assets/images/pg_index/blog-img-1.png" alt = "">
+                            </div>
+                            <div class = "card-item-body">
+                                <h4 class = "card-item-title title-sm">Association of Nepalese Alumni from Australia.</h4>
+                                <div class = "card-item-info fs-12 ls-para">10th August 2021</div>
+                                <p class = "p-text-sm text-justify">ANAA in collaboration with the Australian Embassy Nepal was able to virtually launch this book 61 Years Together. This book aims to present the readers with perspectives and stories of ...</p>
+                                <a href = "#" class = "font-firasans fw-4 fs-12 ls-05 card-item-link">Read More ...</a>
+                            </div>
+                        </div>
+
+                        <div class = "card-item">
+                            <div class = "card-item-img img-cover">
+                                <img src = "assets/images/pg_index/blog-img-1.png" alt = "">
+                            </div>
+                            <div class = "card-item-body">
+                                <h4 class = "card-item-title title-sm">Association of Nepalese Alumni from Australia.</h4>
+                                <div class = "card-item-info fs-12 ls-para">10th August 2021</div>
+                                <p class = "p-text-sm text-justify">ANAA in collaboration with the Australian Embassy Nepal was able to virtually launch this book 61 Years Together. This book aims to present the readers with perspectives and stories of ...</p>
+                                <a href = "#" class = "font-firasans fw-4 fs-12 ls-05 card-item-link">Read More ...</a>
+                            </div>
+                        </div>
+
+                        <div class = "card-item">
+                            <div class = "card-item-img img-cover">
+                                <img src = "assets/images/pg_index/blog-img-1.png" alt = "">
+                            </div>
+                            <div class = "card-item-body">
+                                <h4 class = "card-item-title title-sm">Association of Nepalese Alumni from Australia.</h4>
+                                <div class = "card-item-info fs-12 ls-para">10th August 2021</div>
+                                <p class = "p-text-sm text-justify">ANAA in collaboration with the Australian Embassy Nepal was able to virtually launch this book 61 Years Together. This book aims to present the readers with perspectives and stories of ...</p>
+                                <a href = "#" class = "font-firasans fw-4 fs-12 ls-05 card-item-link">Read More ...</a>
+                            </div>
+                        </div>
+
+                        <a href = "#" class = "title-link fw-6 p-text-lg ls-para d-flex align-items-center justify-content-between">
+                            <span>View All</span>
+                            <span class = "ms-2 title-link-icon p-text-sm text-navy-blue">
+                                <i class = "fas fa-chevron-right"></i>
+                                <i class = "fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- end of blog -->
+
+            <!-- footer -->
+            <footer class = "footer">
+                <div class = "footer-content">
+                    <div class = "footer-top px-3">
+                        <div class = "container">
+                            <div class = "footer-top-items row text-center text-xl-start">
+                                <div class = "col-sm-6 col-xl-3 col-xxl-4 mb-4">
+                                    <div class = "footer-top-item">
+                                        <a href = "#" class = "footer-navbar-brand">
+                                            <img src = "assets/images/site-logos/logo.svg" alt = "" class = "mx-auto">
+                                        </a>
+                                    </div>
+                                </div>
+    
+                                <div class = "col-sm-6 col-xl-3 col-xxl-2 mb-4">
+                                    <div class = "footer-top-item">
+                                        <p class = "text-uppercase p-text-sm fw-5 ls-para footer-top-item-title">members</p>
+                                        <ul class = "footer-nav-links">
+                                            <li>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-lg op-09">Executive board</a>
+                                            </li>
+                                            <li>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-lg op-09">Alumni Registration</a>
+                                            </li>
+                                            <li>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-lg op-09">Members/Alumni</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+    
+                                <div class = "col-sm-6 col-xl-3 col-xxl-3 mb-4">
+                                    <div class = "footer-top-item">
+                                        <p class = "text-uppercase p-text-sm fw-5 ls-para footer-top-item-title">australia links</p>
+                                        <ul class = "footer-nav-links">
+                                            <li>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-lg op-09">Australia Global Alumni</a>
+                                            </li>
+                                            <li>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-lg op-09">Australian Embassy Nepal</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+    
+                                <div class = "col-sm-6 col-xl-3 col-xxl-3">
+                                    <div class = "footer-top-item">
+                                        <p class = "text-uppercase p-text-sm fw-5 ls-para footer-top-item-title">for students</p>
+                                        <ul class = "footer-nav-links">
+                                            <li>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-lg op-09">Study in Australia</a>
+                                            </li>
+                                            <li>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-lg op-09">Australian University</a>
+                                            </li>
+                                            <li>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-lg op-09">Student Visa</a>
+                                            </li>
+                                            <li>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-lg op-09">Job Portal</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "footer-mid px-3">
+                        <div class = "container">
+                            <div class = "footer-mid-items text-center text-xxl-start d-xxl-flex align-items-xxl-center justify-content-between">
+                                <div class = "footer-mid-item mb-4 mb-xxl-0">
+                                    <h5 class = "p-text-lg text-uppercase fw-5 ls-heading">get in touch</h5>
+                                    <p class = "fw-3 p-text-base ls-para font-firasans">Bagbazaar Kathmandu Nepal <br> Phone: 01-4225965 | Mobile: 9865008830  </p>
+                                    <div class = "d-flex align-items-center justify-content-center justify-content-xxl-start">
+                                        <span class = "mail-icon">
+                                            <img src = "assets/images/pg_index/message-circle.svg">
+                                        </span>
+                                        <span class = "text-crayola text-decoration-underline fw-6 p-text-base ls-para">anaanepal2055@gmail.com</span>
+                                    </div>
+                                </div>
+
+                                <div class = "footer-mid-item mb-4 mb-xxl-0">
+                                    <ul class = "d-flex align-items-center justify-content-center flex-wrap">
+                                        <li>
+                                            <a href = "#" class = "fw-5 p-text-lg text-dark">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href = "#"  class = "fw-5 p-text-lg text-dark">Gallery</a>
+                                        </li>
+                                        <li>
+                                            <a href = "#"  class = "fw-5 p-text-lg text-dark">Events</a>
+                                        </li>
+                                        <li>
+                                            <a href = "#"  class = "fw-5 p-text-lg text-dark">Blogs</a>
+                                        </li>
+                                        <li>
+                                            <a href = "#"  class = "fw-5 p-text-lg text-dark">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class = "footer-mid-item d-sm-flex justify-content-sm-center flex-xxl-column">
+                                    <h4 class = "p-text-lg text-dark op-04 fw-5">Follow us on:</h4>
+
+                                    <ul class = "footer-social-links d-flex align-items-center justify-content-center justify-content-xxl-start mt-sm-0 ms-sm-3 ms-xxl-0">
+                                        <li class = "d-flex align-items-center justify-content-center mx-2 ms-xxl-0">
+                                            <a href = "#" class = "footer-social-link p-text-lg">
+                                                <i class="fa-brands fa-square-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class = "d-flex align-items-center justify-content-center mx-2">
+                                            <a href = "#" class = "footer-social-link p-text-lg">
+                                                <i class="fa-brands fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class = "d-flex align-items-center justify-content-center mx-2">
+                                            <a href = "#" class = "footer-social-link p-text-lg">
+                                                <i class="fa-brands fa-youtube"></i>
+                                            </a>
+                                        </li>
+                                        <li class = "d-flex align-items-center justify-content-center mx-2">
+                                            <a href = "#" class = "footer-social-link p-text-lg">
+                                                <i class = "fa-brands fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "footer-bottom px-3 text-center">
+                        <div class = "container">
+                            <p class = "fw-3 p-text-sm ls-para font-firasans mb-0">Copyright © 2022. ANAA. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end of footer -->
+        </div>
+
+
+
+        <!-- JS Library -->
+        <script src = "node_modules/jquery/dist/jquery.js"></script>
+        <script src = "node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+        <script src = "node_modules/slick-carousel/slick/slick.js"></script>
+        <!-- links to custom scripts -->
+        <script src = "assets/js/script.js"></script>
+    </body>
+</html>

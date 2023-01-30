@@ -1,0 +1,25 @@
+%icon-hover-effect{
+    &:hover{
+        @include opacity(0.7);
+    }
+}
+.icon-base{
+    @include box(28px);
+    @include bg-color(#676767);
+    @include flex-center;
+    @include border-r-circle;
+    color: map-get($colors, 'clr-white');
+
+    @include breakpoint-up(sm){
+        @include box(30px);
+    }
+
+    @include breakpoint-up(lg){
+        @include box(32px);
+    }
+}
+
+// social media and other icons
+.icon-facebook{color: $clr-facebook!important;}
+.icon-instagram{color: $clr-instagram!important;}
+.icon-twitter{color: $clr-twitter!important;}
