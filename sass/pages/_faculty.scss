@@ -1,0 +1,6 @@
+
+.fac-members-items{
+    & > div{
+        @include my(15px);
+    }
+}

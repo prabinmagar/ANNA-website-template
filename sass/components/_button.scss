@@ -75,16 +75,23 @@ $btn-primary-bgColor--highlight: darken(map-get($colors, 'clr-primary'), 10%);
 // btn rounded 
 .btn-rounded{
     @extend %btn-default;
+    @include py(5px);
+    @include px(16px);
+    @include border-radius(20px);
+    @include font-w('semi-bold');
+    @include border(map-get($colors, "clr-primary-v1")!important);
 
     &-white{
-        @include font-w('semi-bold');
-        @include py(5px);
-        @include px(16px);
-        @include border-radius(15px);
         color: map-get($colors, 'clr-primary-v1');
+    }
+
+    &-primary{
+        @include bg-color(map-get($colors, 'clr-primary-v1'));
+        color: map-get($colors, 'clr-white');
 
         &:hover{
-            transform: scale(1.04);
+            @include bg-color(map-get($colors, 'clr-white'));
+            color: map-get($colors, 'clr-primary-v1');
         }
     }
 }

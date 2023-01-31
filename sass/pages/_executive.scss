@@ -1,0 +1,10 @@
+.sc-members{
+    padding-top: 70px;
+    padding-bottom: 40px;
+
+    .members-items{
+        & > div{
+            @include my(16px);
+        }
+    }
+}

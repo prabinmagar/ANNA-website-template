@@ -196,6 +196,27 @@
     @include py(60px);
     .gallery-items{
         margin-top: 40px;
+        .gallery-item{
+            @include border-radius(7.68px);
+            overflow:  hidden;
+            @include pos-relative;
+            @include my(14px);
+
+            &-text{
+                @include pos-absolute(null, 0, 0, 0);
+                @include py(9px);
+                @include px(15px);
+                @include bg-color(black(0.8));
+                transform: translateY(100%);
+                @include transition-default;
+            }
+
+            &:hover{
+                .gallery-item-text{
+                    transform: translateY(0);
+                }
+            }
+        }
     }
 }
 

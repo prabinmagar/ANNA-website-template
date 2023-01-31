@@ -1,8 +1,3 @@
-// filter and search
-.filter-search{
-
-}
-
 // pagination
 .pagination{
     .page-link{
@@ -17,6 +12,55 @@
         &:hover{
             @include bg-color(map-get($colors, 'clr-primary-v1'));
             color: map-get($colors, 'clr-white');
+        }
+    }
+}
+
+// tags items
+.tags-list{
+    .tags-item{
+        @include bg-color(#98C3FA);
+        @include border-radius(5px);
+        @include d-inline-block;
+        @include py(4px);
+        @include px(15px);
+        margin-right: 8px;
+        @include my(4px);
+
+        @include breakpoint-up(sm){
+            margin-right: 15px;
+        }
+
+        &-icon{
+            @include font-s(14);
+            margin-left: 10px;
+            cursor: pointer;
+            @include transition-default;
+        }
+
+        &:hover{
+            @include bg-color(map-get($colors, 'clr-primary-v1'));
+        }
+    }
+}
+
+
+// horz line
+.horz-line{
+    @include box(100%, 2px);
+    @include bg-color(black(0.1));
+}
+
+// keywords section
+.sc-keywords{
+    .keywords-list{
+        .keyword-item{
+            @include bg-color(#E0E2E8);
+            @include py(8px);
+            @include px(16px);
+            @include border-radius(4px);
+            @include mx(10px);
+            @include my(9px);
         }
     }
 }

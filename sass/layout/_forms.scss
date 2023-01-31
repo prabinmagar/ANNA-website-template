@@ -1,0 +1,63 @@
+// filter and search
+.filter-search{
+    box-shadow: 0px 4px 20px 0px #78787826;
+    @include py(28px);
+
+    .filter-box{
+        .select-item{
+            height: 50px;
+            border-color: #98C3FA;
+            @include border-radius(10px);
+            color: map-get($colors, 'clr-yale-blue');
+            margin-right: 10px;
+            @include font-w(400);
+            letter-spacing: $paragraph-letter-spacing;
+            // @include bg-color(#E0E0E0);
+
+            option{
+                color: rgba(0, 0, 0, 0.56);
+                @include bg-color(map-get($colors, 'clr-white'));
+            }
+
+            @include breakpoint-up(xxl){
+                margin-right: 30px;
+            }
+
+            &:first-child{
+                min-width: 249px;
+            }
+        }
+    }
+
+    .search-box{
+        .input-group{
+            height: 50px;
+            @include w-100;
+            max-width: 100%;
+
+            @include breakpoint-up(lg){
+                max-width: 312px;
+            }
+            
+            &-text{
+                border-color: rgba(12, 10, 122, 0.2)!important;
+                border-right: 0;
+            }
+
+            .form-control{
+                border-left: 0;
+
+                &:focus{
+                    border-color:rgba(12, 10, 122, 0.2);
+                }
+            }
+        }
+
+        button{
+            width: 100%!important;
+            @include breakpoint-up(sm){
+                width: auto!important;
+            }
+        }
+    }
+}

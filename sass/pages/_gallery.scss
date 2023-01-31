@@ -1,0 +1,42 @@
+
+.sc-gallery-single{
+    .gallery-single-title{
+        margin-top: 80px;
+        margin-bottom: 24px;
+    }
+
+    .gallery-items{
+        & > div{
+            @include my(8px);
+        }
+
+        .gallery-item{
+            &:hover{
+                @include opacity(0.8);
+            }
+        }
+    }
+}
+
+.sc-gallery-view{
+    .preview-main{
+        @include border-radius(7.5px);
+        overflow: hidden;
+        max-height: 576px;
+    }
+
+    .preview-thumbnails{
+        @include my(24px);
+        @include mx(-10px);
+
+        .thumbnail-item{
+            @include px(10px);
+            cursor: pointer;
+            @include transition-default;
+
+            &:hover{
+                transform: scale(0.95);
+            }
+        }
+    }
+}

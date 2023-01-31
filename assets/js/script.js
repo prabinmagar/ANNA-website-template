@@ -59,25 +59,83 @@ $(document).ready(function(){
           breakpoint: 1320,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
           }
         },
         {
           breakpoint: 1200,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2
           }
         },
         {
           breakpoint: 768,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
           }
         }
       ]
     });
+
+    $('.preview-thumbnails').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1320,
+          settings: {
+            slidesToShow: 5,
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 4,
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 450,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
+    });
+
+    // custom image preview single
+    const thumbnails = $('.preview-thumbnails .slick-slide');
+    jQuery.each(thumbnails, function(index, thumbnailItem){
+      $(thumbnailItem).on('click', function(){
+        let imgURL = $(thumbnailItem).find('.thumbnail-item img').attr('src');
+        $('.preview-main').find('img').attr('src', imgURL);
+      });
+    });
+
+    // tags list
+    const tagsList = $('.tags-list .tags-item .tags-item-icon');
+    jQuery.each(tagsList, function(index, tagsItem){
+      $(tagsItem).on('click', function(){
+        $(tagsItem).parent().remove();
+      });
+    });
+
+    // lightbox image previewer
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
 })

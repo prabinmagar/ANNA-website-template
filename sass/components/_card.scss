@@ -34,8 +34,44 @@
     &-img{
         height: 420px;
     }
+}
+
+.card-profile{
+    @include border(black(0.3));
+    @include p(40px, 24px, 48px, 24px);
+
+    &-img{
+        @include box(160px);
+        @include border-r-circle;
+        overflow: hidden;
+    }
+}
+
+.card-featured{
+    box-shadow: 1.11111px 7.22222px 16.1111px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    @include border-radius(4px);
+
+    &-img{
+        max-height: 372px;
+        overflow: hidden;
+    }
 
     &-body{
-        @include p-all(14.5px);
+        @include py(32px);
+        @include px(24px);
+    }
+
+    &-link{
+        color: map-get($colors, 'clr-crayola')!important;
+    }
+}
+
+.card-wide{
+    box-shadow: 1.11111px 7.22222px 16.1111px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    @include border-radius(6px);
+    overflow: hidden;
+
+    &-link{
+        color: map-get($colors, 'clr-crayola')!important;
     }
 }

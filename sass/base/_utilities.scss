@@ -27,6 +27,8 @@
     }
 }
 
+.op-none{ opacity: 1!important; }
+
 // mixin for font sizes
 @mixin gen-font($prefix, $property){
     @each $size-name, $size in $font-size{
@@ -62,9 +64,7 @@
 }
 
 // no wrap 
-.no-wrap{
-    white-space: nowrap;
-}
+.no-wrap{ white-space: nowrap; }
 
 // animation and transition stopper 
 .resize-animation-stopper * {
@@ -73,9 +73,7 @@
 }
 
 // text justify
-.text-justify{
-    text-align: justify;
-}
+.text-justify{ text-align: justify; }
 
 @include breakpoint-up(sm){
     .text-sm-justify{ text-align: justify}
@@ -94,32 +92,23 @@
 }
 
 // misc
-.fs-13{
-    @include font-s(13);
-}
-
-.is-hidden{
-    @include hidden;
-}
-.cf{@include cf;}
-
+.is-hidden{ @include hidden; }
+.cf{ @include cf; }
 
 // height
-.vh-100{
-    height: 100vh!important;
-}
+.vh-100{ height: 100vh!important; }
 
 // letter spacing
 .ls-heading{ letter-spacing: $heading-letter-spacing; }
 .ls-para{ letter-spacing: $paragraph-letter-spacing; }
-.ls-05{
-    letter-spacing: 0.05em;
-}
+.ls-04{ letter-spacing: 0.04em; }
+.ls-05{ letter-spacing: 0.05em; }
+.ls-08{ letter-spacing: 0.08em; }
 
 // font size
-.fs-12{
-    @include font-s(13);
-}
+.fs-10{ @include font-s(10); }
+.fs-12{ @include font-s(12); }
+.fs-13{ @include font-s(13); }
 
 // border
 .border-dashed-amber{
@@ -138,7 +127,7 @@
 .mt-12px{ margin-top: 12px; }
 .pt-12px{ padding-top: 12px; }
 .pb-12px{ padding-bottom: 12px; }
-
+.mb-80px{ margin-bottom: 80px;}
 
 .bottom-overflow-fade {
     mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
@@ -170,3 +159,5 @@
         }
     }
 }
+
+.min-width-auto{ min-width: auto!important; }
