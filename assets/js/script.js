@@ -46,8 +46,44 @@ $(document).ready(function(){
       });
     });
 
+    // scroll on mouse wheel
+    const mouseWheel = $('.intro-scroll-content');
+    $(mouseWheel).mousewheel(function(event){
+      this.scrollLeft -= (event.deltaY * 200);
+      event.preventDefault();
+    });
+
     // slick slider
     $('.blogs-slider').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerPadding: '16.5px',
+      responsive: [
+        {
+          breakpoint: 1320,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
+    });
+
+    $('.events-slider').slick({
       dots: false,
       infinite: true,
       speed: 300,

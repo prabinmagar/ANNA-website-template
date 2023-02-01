@@ -1,5 +1,7 @@
 
 .footer{
+    @include border(black(0.1), 1px, top);
+
     &-content{
         .footer-top{
             @include py(37px);

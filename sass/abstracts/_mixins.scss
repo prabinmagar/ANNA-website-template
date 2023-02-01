@@ -308,6 +308,10 @@
 }
 
 /* ########### Flexbox ########## */
+@mixin inline-flex{
+    display: inline-flex;
+}
+
 // Flexbox Direction
 @mixin flex-direction($value: row) {
 	@if $value == row-reverse {

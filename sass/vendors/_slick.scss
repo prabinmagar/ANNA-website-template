@@ -27,3 +27,31 @@
         right: 25px;
     }
 }
+
+%slick-arrow-default{
+    @include font-s(12);
+    font-family: "Font Awesome 6 free"; 
+    @include font-w(900);
+    @include box(22px);
+    @include d-block;
+    @include bg-color(map-get($colors, 'clr-white'));
+    @include border(black(0.2), 2px);
+    @include border-r-circle;
+}
+
+.slick{
+    &-prev{
+        &::before{
+            content: "\f053";
+            @extend %slick-arrow-default;
+        }
+    }
+
+    &-next{
+        &::before{
+            content: "\f054";
+            @extend %slick-arrow-default;
+        }
+    }
+}
+

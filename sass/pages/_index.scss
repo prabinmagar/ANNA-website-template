@@ -1,4 +1,13 @@
-
+.header-items{
+    .slick{
+        &-prev, &-next{
+            &::before{
+                @include bg-color(white(0.4));
+                border-color: transparent;
+            }
+        }
+    }
+}
 
 .sc-index-about{
     @include py(100px);
@@ -45,6 +54,39 @@
 
     @include breakpoint-down(sm){
         min-height: 120px;
+    }
+}
+
+.sc-intro-scroll{
+    @include py(80px);
+
+    .intro-scroll-content{
+        overflow-x: scroll;
+        /* Hiddem scroll bar */
+        scrollbar-width: none;  /* Firefox */
+        -ms-overflow-style: none;  /* IE and Edge */
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    
+
+    .scroll-item{
+        @include px(69px);
+        border-right: 2px solid opacity(map-get($colors, 'clr-primary'), 0.3);
+
+        &-value{
+            @include font-s(200);
+        }
+
+        &-text{
+            color: map-get($colors, "clr-primary");
+            @include font-s(46);
+            margin-left: 69px;
+        }
     }
 }
 
@@ -138,11 +180,14 @@
     @include py(50px);
 
     .events-items{
-        margin-top: 50px;
+        margin-top: 30px;
+        padding-top: 42px;
 
         .pills-item{
             @include p(5px, 10px, 5px, 10px);
             @include border-radius(5px);
+            @include inline-flex;
+            @include align-items(center);
         }
 
         .events-item{
@@ -150,6 +195,10 @@
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             overflow: hidden;
+
+            &-wrapper{
+                @include px(13.5px!important);
+            }
 
             &-img{
                 @include pos-relative;
@@ -187,6 +236,25 @@
 
             &-btn{
                 margin-top: 12px;
+            }
+        }
+
+        .slick-list{
+            padding-bottom: 10px;
+        }
+    
+        .slick-prev{
+            @include pos-absolute(0, null, 10px!important, calc(100% - 100px));
+    
+            &::before{
+                color: #C2B9B9!important;
+            }
+        }
+        .slick-next{
+            @include pos-absolute(0, 20px, null, null);
+    
+            &::before{
+                color: #C2B9B9!important;
             }
         }
     }
@@ -240,7 +308,9 @@
     .blogs-items{
         @include mx(-16.5px);
         @include pos-relative;
-        @include py(40px);
+        margin-top: 30px;
+        padding-top: 24px;
+        padding-bottom: 40px;
 
         .slick-prev{
             @include pos-absolute(0, null, 10px!important, calc(100% - 100px));

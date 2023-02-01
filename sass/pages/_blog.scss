@@ -1,4 +1,17 @@
 
 .sc-blogs-grid{
-    
+    .blogs-grid-list{
+        @include grid;
+        column-gap: 24px;
+
+        @include breakpoint-up(xl){
+            grid-template-columns: repeat(2, 1fr);
+
+            .blog-card{
+                &:nth-child(1){
+                    grid-row: 1/4;
+                }
+            }
+        }
+    }
 }

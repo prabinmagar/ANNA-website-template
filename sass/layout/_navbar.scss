@@ -66,8 +66,13 @@
 
                 .nav-link{
                     color: map-get($map: $colors, $key: "clr-white");
+
                     &:hover{
                         z-index: 10;
+                    }
+
+                    &-icon{
+                        margin-left: 4px;
                     }
                 }
 
@@ -84,10 +89,16 @@
                         @include border-radius(4px);
                         @include d-none;
 
-                        li{
+                        &-item{
                             text-align: left;
-                            a{
-                                color: map-get($colors, 'clr-white');
+                            @include my(10px!important);
+                            
+                        }
+
+                        &-link{
+                            color: map-get($colors, 'clr-white');
+                            &:hover{
+                                @include opacity(0.8);
                             }
                         }
 

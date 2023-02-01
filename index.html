@@ -9,9 +9,9 @@
         <!-- CSS Library -->
         <link rel = "stylesheet" href = "node_modules/@fortawesome/fontawesome-free/css/all.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
         <link rel = "stylesheet" href = "node_modules/slick-carousel/slick/slick-theme.css">
         <link rel = "stylesheet" href = "node_modules/slick-carousel/slick/slick.css">
+        <link rel = "stylesheet" href = "node_modules/lightbox2/dist/css/lightbox.css">
         <!-- links to custom styles -->
         <link rel="stylesheet" href="assets/css/main.css">
         <style>
@@ -89,11 +89,11 @@
                                     </span>
 
                                     <ul class = "nav-dropdown-menu p-2">
-                                        <li class = "my-1">
-                                            <a href = "#" class = "fw-4">Australian Global Alumni</a>
+                                        <li class = "my-1 nav-dropdown-menu-item">
+                                            <a href = "#" class = "fw-4 nav-dropdown-menu-link">Australian Global Alumni</a>
                                         </li>
-                                        <li class = "my-1">
-                                            <a href = "#" class = "fw-4">Australian Embassy Nepal</a>
+                                        <li class = "my-1 nav-dropdown-menu-item">
+                                            <a href = "#" class = "fw-4 nav-dropdown-menu-link">Australian Embassy Nepal</a>
                                         </li>
                                     </ul>
                                 </button>
@@ -107,14 +107,14 @@
                                     </span>
 
                                     <ul class = "nav-dropdown-menu p-2">
-                                        <li class = "my-1">
-                                            <a href = "#" class = "fw-4">Study in Australia</a>
+                                        <li class = "my-1 nav-dropdown-menu-item">
+                                            <a href = "#" class = "fw-4 nav-dropdown-menu-link">Study in Australia</a>
                                         </li>
-                                        <li class = "my-1">
-                                            <a href = "#" class = "fw-4">Australian University</a>
+                                        <li class = "my-1 nav-dropdown-menu-item">
+                                            <a href = "#" class = "fw-4 nav-dropdown-menu-link">Australian University</a>
                                         </li>
-                                        <li class = "my-1">
-                                            <a href = "#" class = "fw-4">Student Visa</a>
+                                        <li class = "my-1 nav-dropdown-menu-item">
+                                            <a href = "#" class = "fw-4 nav-dropdown-menu-link">Student Visa</a>
                                         </li>
                                     </ul>
                                 </button>
@@ -192,6 +192,27 @@
                 </div>
             </section>
             <!-- section one  -->
+
+            <section class = "sc-intro-scroll">
+                <div class = "intro-scroll-content d-flex">
+                    <div class = "scroll-item text-center d-flex align-items-center">
+                        <div class = "scroll-item-value fw-8 ls-heading font-firasans">25</div>
+                        <p class = "mb-0 scroll-item-text font-firasans fw-8 ls-heading no-wrap">year together</p>
+                    </div>
+                    <div class = "scroll-item text-center d-flex align-items-center">
+                        <div class = "scroll-item-value fw-8 ls-heading font-firasans">5000</div>
+                        <p class = "mb-0 scroll-item-text font-firasans fw-8 ls-heading no-wrap">member</p>
+                    </div>
+                    <div class = "scroll-item text-center d-flex align-items-center">
+                        <div class = "scroll-item-value fw-8 ls-heading font-firasans">25</div>
+                        <p class = "mb-0 scroll-item-text font-firasans fw-8 ls-heading no-wrap">year together</p>
+                    </div>
+                    <div class = "scroll-item text-center d-flex align-items-center">
+                        <div class = "scroll-item-value fw-8 ls-heading font-firasans">5000</div>
+                        <p class = "mb-0 scroll-item-text font-firasans fw-8 ls-heading no-wrap">member</p>
+                    </div>
+                </div>
+            </section>
 
             <section class = "sc-sm-banner d-flex align-items-center justify-content-center px-3" style = "background: url('assets/images/pg_index/short_banner.png') center/cover no-repeat">
                 <div class = "container">
@@ -375,9 +396,19 @@
                             <div class = "sc-top-info-text fw-8">Who are we ?</div>
                         </div>
 
-                        <h3 class = "title-lg text-dark">Stay in touch</h3>
-                        <div class = "events-items row">
-                            <div class = "col-md-6 col-xl-4 mb-4">
+                        <div class = "d-flex align-items-center justify-content-between mb-2">
+                            <h3 class = "title-lg text-dark">Stay in touch</h3>
+                            <a href = "#" class = "title-link fw-6 p-text-lg ls-para d-flex align-items-center justify-content-between">
+                                <span>View All</span>
+                                <span class = "ms-2 title-link-icon p-text-sm text-navy-blue">
+                                    <i class = "fas fa-chevron-right"></i>
+                                    <i class = "fas fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class = "events-items events-slider">
+                            <div class = "events-item-wrapper">
                                 <div class = "events-item">
                                     <div class = "events-item-img">
                                         <h4 class = "text-white events-item-img-text title-sm fw-8">ChampaDevi Hiking Event (IAC)</h4>
@@ -417,8 +448,8 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class = "col-md-6 col-xl-4 mb-4">
+                            
+                            <div class = "events-item-wrapper">
                                 <div class = "events-item">
                                     <div class = "events-item-img">
                                         <h4 class = "text-white events-item-img-text title-sm fw-8">ChampaDevi Hiking Event (IAC)</h4>
@@ -459,7 +490,48 @@
                                 </div>
                             </div>
 
-                            <div class = "col-md-6 col-xl-4">
+                            <div class = "events-item-wrapper">
+                                <div class = "events-item">
+                                    <div class = "events-item-img">
+                                        <h4 class = "text-white events-item-img-text title-sm fw-8">ChampaDevi Hiking Event (IAC)</h4>
+                                        <img src = "assets/images/pg_index/event-img.png" alt = "">
+                                    </div>
+                                    <div class = "events-item-text">
+                                        <div class = "d-flex align-items-center flex-wrap pills-group">
+                                            <div class = "pills-item fs-13 text-black-05 fw-6 border-dashed-black-05 me-3 font-notosans">Text</div>
+    
+                                            <div class = "pills-item border-dashed-amber">
+                                                <span class = "pills-item-icon fs-13 text-amber">
+                                                    <i class = "fas fa-hourglass"></i>
+                                                </span>
+                                                <span class = "fs-13 text-amber fw-6 ms-1 font-notosans">Expired</span>
+                                            </div>
+                                        </div>
+                                        <div class = "events-item-title">
+                                            <h3 class = "op-09 ls-05">ChampaDevi Hiking Event (IAC)</h3>
+                                        </div>
+                                        <div class = "events-item-info">
+                                            <div class = "info-item d-grid align-items-center mb-1">
+                                                <span class = "info-item-icon d-inline-block">
+                                                    <img src = "assets/images/icons/calendar.svg" alt = "">
+                                                </span>
+                                                <span class = "info-item-text fw-6 text-granite-gray p-text-sm ms-1">22nd December 2022</span>
+                                            </div>
+    
+                                            <div class = "info-item align-items-center mb-1">
+                                                <span class = "info-item-icon">
+                                                    <img src = "assets/images/icons/location.svg" alt = "">
+                                                </span>
+                                                <span class = "info-item-text fw-6 text-granite-gray p-text-sm ms-1">Hyatt Regency, taragaun Boudhha</span>
+                                            </div>
+                                        </div>
+    
+                                        <button type = "button" class = "btn-outline btn-outline-gray84-lt events-item-btn fw-6">Text</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class = "events-item-wrapper">
                                 <div class = "events-item">
                                     <div class = "events-item-img">
                                         <h4 class = "text-white events-item-img-text title-sm fw-8">ChampaDevi Hiking Event (IAC)</h4>
@@ -570,7 +642,16 @@
             <section class = "sc-blogs px-3">
                 <div class = "container">
                     <div class = "blogs-content">
-                        <h3 class = "title-lg msg-banner-title text-dark">Blogs</h3>
+                        <div class = "d-flex align-items-center justify-content-between mb-2">
+                            <h3 class = "title-lg msg-banner-title text-dark">Blogs</h3>
+                            <a href = "#" class = "title-link fw-6 p-text-lg ls-para d-flex align-items-center justify-content-between">
+                                <span>View All</span>
+                                <span class = "ms-2 title-link-icon p-text-sm text-navy-blue">
+                                    <i class = "fas fa-chevron-right"></i>
+                                    <i class = "fas fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
                     </div>
 
                     <div class = "blogs-items blogs-slider">
@@ -621,14 +702,6 @@
                                 <a href = "#" class = "font-firasans fw-4 fs-12 ls-05 card-item-link">Read More ...</a>
                             </div>
                         </div>
-
-                        <a href = "#" class = "title-link fw-6 p-text-lg ls-para d-flex align-items-center justify-content-between">
-                            <span>View All</span>
-                            <span class = "ms-2 title-link-icon p-text-sm text-navy-blue">
-                                <i class = "fas fa-chevron-right"></i>
-                                <i class = "fas fa-chevron-right"></i>
-                            </span>
-                        </a>
                     </div>
                 </div>
             </section>
@@ -640,10 +713,10 @@
                     <div class = "footer-top px-3">
                         <div class = "container">
                             <div class = "footer-top-items row text-center text-xl-start">
-                                <div class = "col-sm-6 col-xl-3 col-xxl-4 mb-4">
+                                <div class = "col-sm-6 col-xl-4 col-xxl-4 mb-4">
                                     <div class = "footer-top-item">
                                         <a href = "#" class = "footer-navbar-brand">
-                                            <img src = "assets/images/site-logos/logo.svg" alt = "" class = "mx-auto">
+                                            <img src = "assets/images/site-logos/logo.svg" alt = "" class = "mx-auto ms-xl-0">
                                         </a>
                                     </div>
                                 </div>
@@ -653,13 +726,13 @@
                                         <p class = "text-uppercase p-text-sm fw-5 ls-para footer-top-item-title">members</p>
                                         <ul class = "footer-nav-links">
                                             <li>
-                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-lg op-09">Executive board</a>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-base op-09">Executive board</a>
                                             </li>
                                             <li>
-                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-lg op-09">Alumni Registration</a>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-base op-09">Alumni Registration</a>
                                             </li>
                                             <li>
-                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-lg op-09">Members/Alumni</a>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-base op-09">Members/Alumni</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -670,30 +743,30 @@
                                         <p class = "text-uppercase p-text-sm fw-5 ls-para footer-top-item-title">australia links</p>
                                         <ul class = "footer-nav-links">
                                             <li>
-                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-lg op-09">Australia Global Alumni</a>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-base op-09">Australia Global Alumni</a>
                                             </li>
                                             <li>
-                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-lg op-09">Australian Embassy Nepal</a>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-base op-09">Australian Embassy Nepal</a>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
     
-                                <div class = "col-sm-6 col-xl-3 col-xxl-3">
+                                <div class = "col-sm-6 col-xl-2 col-xxl-3">
                                     <div class = "footer-top-item">
                                         <p class = "text-uppercase p-text-sm fw-5 ls-para footer-top-item-title">for students</p>
                                         <ul class = "footer-nav-links">
                                             <li>
-                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-lg op-09">Study in Australia</a>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-base op-09">Study in Australia</a>
                                             </li>
                                             <li>
-                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-lg op-09">Australian University</a>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-base op-09">Australian University</a>
                                             </li>
                                             <li>
-                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-lg op-09">Student Visa</a>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-base op-09">Student Visa</a>
                                             </li>
                                             <li>
-                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-lg op-09">Job Portal</a>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-base op-09">Job Portal</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -784,6 +857,8 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
         <script src = "node_modules/slick-carousel/slick/slick.js"></script>
+        <script src = "node_modules/lightbox2/dist/js/lightbox.js"></script>
+        <script src = "node_modules/jquery-mousewheel/jquery.mousewheel.js"></script>
         <!-- links to custom scripts -->
         <script src = "assets/js/script.js"></script>
     </body>
