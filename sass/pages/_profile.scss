@@ -1,0 +1,193 @@
+
+
+.profile-intro{
+    @include py(46px);
+    @include px(32px);
+    @include border-radius(10px);
+    margin-top: 12px;
+    @include bg-color(opacity(map-get($colors, 'clr-baby-blue-eyes'), 0.2));
+
+    .profile-img{
+        @include box(160px);
+        @include overflow-hidden;
+        @include border-r-circle;
+    }
+
+    .profile-text{
+        @include breakpoint-up(lg){
+            margin-left: 46px!important;
+        }
+    }
+
+    .profile-info{
+        &-item{
+            .profile-info-icon{
+                width: 14px;
+                @include d-inline-block;
+            }
+        }
+    }
+
+    // single button
+    .profile-btn{
+        .btn-bordered{
+            min-width: 183px;
+            @include bg-color(#E0E2E8);
+            border-color: #E0E2E8;
+            box-shadow: none;
+            &-icon{
+                width: 24px;
+            }
+
+            &-text{
+                @include transition-default;
+
+                &:hover{
+                    color: opacity(map-get($colors, 'clr-rich-black'), 0.8);
+                }
+            }
+        }
+    }
+
+    // button group 
+    .profile-btns-group{
+        .btn-bordered{
+            min-width: 145px;
+            border-color: map-get($colors, 'clr-green-blue');
+
+            &:first-child{
+                .btn-bordered-text:hover{
+                    color: map-get($colors, 'clr-green-blue')!important;
+                }
+
+                &:hover{
+                   .btn-bordered-text{
+                        color: map-get($colors, 'clr-green-blue')!important;
+                   } 
+                }
+            }
+
+            &:last-child{
+                @include bg-color(map-get($colors, 'clr-green-blue'));
+            }
+        }
+    }
+
+    @include breakpoint-up(xl){
+        @include px(90px);
+    }
+}
+
+.profile-overview{
+    @include my(40px);
+    @include py(20px);
+    @include border(opacity(black(0.25), 0.05)!important);
+    @include border-radius(10px);
+
+    &-title{
+        margin-bottom: 28px;
+        @include px(20px);
+
+        @include breakpoint-up(lg){
+            @include px(40px);
+        }
+
+        @include breakpoint-up(xxl){
+            @include px(85px);
+        }
+    }
+
+    &-content{
+        & > *{
+            @include px(20px);
+
+            @include breakpoint-up(lg){
+                @include px(40px);
+            }
+
+            @include breakpoint-up(xxl){
+                @include px(85px);
+            }
+        }
+
+        .nav-tabs{
+            @include border-none;
+            @include border(opacity(black(0.5), 0.1)!important, 1px, bottom);
+    
+            .nav-item{
+                button{
+                    margin-right: 20px;
+                    margin-bottom: 5px;
+                    @include border-none;
+
+                    @include breakpoint-up(lg){
+                        margin-right: 40px;
+                    }
+
+                    @include breakpoint-up(xxl){
+                        margin-right: 87px;
+                    }
+                }
+    
+                .nav-link{
+                    @include hard--sides;
+                    color: opacity(map-get($colors, 'clr-dark'), 0.8);
+                    @include flush--bottom;
+
+                    &.active{
+                        color: map-get($colors, 'clr-primary-v1')!important;
+                        @include border(map-get($colors, 'clr-primary-v1')!important, 3px, bottom);
+                    }
+                }
+            }
+        }
+
+        .tab-content{
+            .tab-pane{
+                @include py(36px);
+            }
+        }
+    }
+}
+
+
+.profile-interest{
+    @include border(opacity(black(0.25), 0.05)!important);
+    @include border-radius(10px);
+    @include bg-color(opacity(#E0E2E8, 0.2));
+
+    @include px(20px);
+
+    @include breakpoint-up(lg){
+        @include px(40px);
+    }
+
+    @include breakpoint-up(xxl){
+        @include px(85px);
+    }
+}
+
+// profile slider
+.members-items{
+    @include mx(-11px);
+    padding-top: 32px!important;
+
+    .members-item-wrapper{
+        @include px(11px);
+    }
+
+    .slick-prev{
+        @include pos-absolute(0, null, 10px!important, calc(100% - 100px));
+
+        &::before{
+            color: #C2B9B9!important;
+        }
+    }
+    .slick-next{
+        @include pos-absolute(0, 20px, null, null);
+
+        &::before{
+            color: #C2B9B9!important;
+        }
+    }
+}

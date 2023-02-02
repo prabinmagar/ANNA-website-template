@@ -57,6 +57,14 @@
     }
 }
 
+.sc-strategy{
+    .btn-lg{
+        &-text, &-icon{
+            color: map-get($colors, 'clr-dark')!important;
+        }
+    }
+}
+
 .sc-intro-scroll{
     @include py(80px);
 

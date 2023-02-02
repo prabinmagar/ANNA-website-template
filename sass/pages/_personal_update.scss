@@ -1,0 +1,49 @@
+
+.sc-personal-update{
+    @include py(80px);
+
+    .personal-update-left{
+        .update-img{
+            @include box(160px);
+            @include pos-relative;
+
+            &-wrapper{
+                @include box(160px);
+                @include border-r-circle;
+                @include overflow-hidden;
+            }
+
+            .img-upload-btn{
+                @include box(48px);
+                @include border-none;
+                @include bg-color(map-get($colors, 'clr-white'));
+                @include border-r-circle;
+                @include pos-absolute(null, 0px!important, 0, null);
+
+                img{
+                    width: 24px;
+                    @include pos-relative;
+                    z-index: 10;
+                }
+
+                &::after{
+                    content: "";
+                    @include pos-absolute(50%, null, null, 50%);
+                    @include box(46px);
+                    transform: translate(-50%, -50%);
+                    @include bg-color(#216BCA);
+                    @include border-r-circle;
+                }
+            }
+        }
+    }
+
+    .update-form-title{
+        color: #30323D;
+        margin-bottom: 24px;
+    }
+
+    .personal-update-right{
+
+    }
+}

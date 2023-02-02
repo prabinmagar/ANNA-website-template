@@ -49,6 +49,13 @@
                 }
             }
 
+            .navbar-top-profile-item{
+                .info-icon{
+                    @include overflow-hidden;
+                    @include border-r-circle;
+                }
+            }
+
             @include breakpoint-down(lg){
                 border-top: 1px solid rgba(0, 0, 0, 0.1);
             }

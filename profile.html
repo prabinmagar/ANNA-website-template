@@ -50,15 +50,12 @@
                                             <span class = "fw-5 p-text-sm text-dark d-block">9851063582</span>
                                         </div>
                                     </li>
-                                    <li class = "navbar-top-info-item">
-                                        <span class = "info-icon icon-base fs-xx-sm">
-                                            <i class="fa-solid fa-user"></i>
+                                    <li class = "navbar-top-info-item navbar-top-profile-item">
+                                        <span class = "info-icon icon-base fs-xx-sm img-cover">
+                                            <img src = "assets/images/icons/profile-image.png" alt = "">
                                         </span>
                                         <div class = "info-text">
-                                            <span class = "fw-5 p-text-sm text-dark">Member</span>
-                                            <span class = "fs-13 ms-2">
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </span>
+                                            <span class = "fw-5 p-text-sm text-dark">Ananta Poudyal</span>
                                         </div>
                                     </li>
                                 </ul>
@@ -138,38 +135,370 @@
             </nav>
             <!-- navbar section -->
 
-            <section class = "profile">
+            <section class = "sc-profile px-3">
                 <div class = "container">
                     <div class = "profile-content">
-                        <div class = "profile-intro row">
-                            <div class = "profile-img">
-                                <img src = "assets/images/pg_profile/members-1.png" alt = "">
+                        <!-- profile intro section -->
+                        <div class = "profile-intro d-lg-flex justify-content-lg-between text-center text-lg-start">
+                            <div class = "d-lg-flex align-items-lg-center">
+                                <div class = "profile-img mb-4 mx-auto mx-lg-0">
+                                    <img src = "assets/images/pg_profile/members-1.png" alt = "">
+                                </div>
+                                <div class = "profile-text ms-lg-0">
+                                    <h4 class = "p-text-x-lg font-notosans ls-para fw-7 mb-2">Ananta Poudyal</h4>
+                                    <p class = "font-notosans fw-4 p-text-sm ls-para mb-1">Masters of International Relations</p>
+                                    <p class = "font-notosans fw-7 p-text-sm ls-para">Monash University (2012 - 2014)</p>
+    
+                                    <ul class = "profile-info mt-4">
+                                        <li class = "profile-info-item d-lg-flex align-items-lg-center">
+                                            <span class = "profile-info-icon">
+                                                <img src = "assets/images/icons/envelope-icon.svg" alt = "">
+                                            </span>
+                                            <span class = "fs-14 fw-5 ls-para ms-2">E-mail: <span class = "fw-7">nanta@nepalec.edu.np</span>
+                                        </li>
+                                        <li class = "profile-info-item d-lg-flex align-itemslg--center">
+                                            <span class = "profile-info-icon">
+                                                <img src = "assets/images/icons/map-marker-icon.svg" alt = "">
+                                            </span>
+                                            <span class = "fs-14 fw-5 ls-para ms-2">Current City: Kathmandu, Nepal</span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class = "profile-text">
-                                <h4 class = "p-text-x-lg font-notosans">Ananta Poudyal</h4>
-                                <p class = "font-notosans fw-4 p-text-x-lg ls-para">Masters of International Relations</p>
-                                <p class = "font-notosans fw-7 p-text-x-lg ls-para">Monash University (2012 - 2014)</p>
+                            <div class = "profile-btn mt-4 mt-lg-auto">
+                                <a href = "#" class = "btn-bordered d-inline-flex align-items-center justify-content-center">
+                                    <span class = "btn-bordered-icon d-inline-block ms-0">
+                                        <img src = "assets/images/icons/edit.svg" alt = "">
+                                    </span>
+                                    <span class = "btn-bordered-text fw-6 p-text-sm text-rich-black ms-2">Update Profile</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- end of profile intro section -->
 
-                                <ul class = "profile-info">
-                                    <li>
-                                        <span class = "profile-info-icon">
-                                            <img src = "assets/images/icons/envelope-icon.svg" alt = "">
-                                        </span>
-                                        <span>E-mail: <span>nanta@nepalec.edu.np</span>
+                        <!-- profile overview section -->
+                        <div class = "profile-overview">
+                            <h5 class = "fw-5 title-sm profile-overview-title ls-05 font-firasans text-dark">Overview</h5>
+                            <div class = "profile-overview-content">
+                                <ul class="nav nav-tabs" id="profile-overview-tabs" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active fw-6 p-text-sm ls-05" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane" aria-selected="true">About Me</button>
                                     </li>
-                                    <li>
-                                        <span class = "profile-info-icon">
-                                            <img src = "assets/images/icons/map-marker-icon.svg" alt = "">
-                                        </span>
-                                        <span>Current City: Kathmandu, Nepal</span>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fw-6 p-text-sm ls-05" id="faculty-tab" data-bs-toggle="tab" data-bs-target="#faculty-tab-pane" type="button" role="tab" aria-controls="faculty-tab-pane" aria-selected="false">Education Faculty</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fw-6 p-text-sm ls-05" id="expertise-tab" data-bs-toggle="tab" data-bs-target="#expertise-tab-pane" type="button" role="tab" aria-controls="expertise-tab-pane" aria-selected="false">Professional Expertise</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fw-6 p-text-sm ls-05" id="experience-tab" data-bs-toggle="tab" data-bs-target="#experience-tab-pane" type="button" role="tab" aria-controls="experience-tab-pane" aria-selected="false">Experience</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link fw-6 p-text-sm ls-05" id="career-tab" data-bs-toggle="tab" data-bs-target="#career-tab-pane" type="button" role="tab" aria-controls="career-tab-pane" aria-selected="false">Key Career Highlight</button>
                                     </li>
                                 </ul>
+                                <div class="tab-content" id="profile-overview-tab-content">
+                                        <div class="tab-pane fade show active" id="about-tab-pane" role="tabpanel" aria-labelledby="about-tab" tabindex="0">
+                                            <div class = "bottom-overflow-fade tab-content-stylings">
+                                                <p>The Association of Nepalese Alumni from Australia(ANAA) is a non-government, non-political and non-profit organization of professionals who graduated from various universities or educational institutions of Australia.It was established in 1998 (2055 B.S). ANAA is acclaimed for fostering and strengthening cordial and mutually beneficial relationship among its member in Nepal and Australia. ANAA aims to establish long term relationships with like-minded organizations and associations for the benefit of exchange of experience and opportunities created and shared by those associations to its members. ANAA also focuses on imparting knowledge, skill and expertise of the alumni to contribute to the development of different sectors of Nepal.</p>
+                                                <a href = "#" class = "">
+                                                    <span>READ MORE</span>
+                                                    <span class = "ms-2">
+                                                        <i class = "fas fa-arrow-down"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="faculty-tab-pane" role="tabpanel" aria-labelledby="faculty-tab" tabindex="0">...Faculty</div>
+                                        <div class="tab-pane fade" id="expertise-tab-pane" role="tabpanel" aria-labelledby="expertise-tab" tabindex="0">... Expertise </div>
+                                        <div class="tab-pane fade" id="experience-tab-pane" role="tabpanel" aria-labelledby="experience-tab" tabindex="0">... Experience</div>
+                                        <div class="tab-pane fade" id="career-tab-pane" role="tabpanel" aria-labelledby="career-tab" tabindex="0">... Career</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of profile overview section -->
+
+                        <!-- interests -->
+                        <div class = "profile-interest pt-5">
+                            <h5 class = "fw-5 p-text-base fw-7 op-08 ls-05">Interests</h5>
+                            <ul class = "keywords-list d-flex flex-wrap justify-content-start mt-4 mb-5">
+                                <li class = "fw-5 fs-14 ls-05 keyword-item op-07 text-dark">Writing</li>
+                                <li class = "fw-5 fs-14 ls-05 keyword-item op-07 text-dark">Hiking</li>
+                                <li class = "fw-5 fs-14 ls-05 keyword-item op-07 text-dark">Travel</li>
+                                <li class = "fw-5 fs-14 ls-05 keyword-item op-07 text-dark">Advertising</li>
+                                <li class = "fw-5 fs-14 ls-05 keyword-item op-07 text-dark">Volunteering and community involvement</li>
+                                <li class = "fw-5 fs-14 14 ls-05 keyword-item op-07 text-dark">Writing</li>
+                                <li class = "fw-5 fs-ls-05 keyword-item op-07 text-dark">Hiking</li>
+                                <li class = "fw-5 fs-14 ls-05 keyword-item op-07 text-dark">Travel</li>
+                            </ul>
+                        </div>
+                        <!-- end of interests -->
+                    </div>
+                </div>
+            </section>
+
+            <section class = "sc-members mt-3 px-3">
+                <div class = "container">
+                    <div class = "members-content">
+                        <div class = "members-top mb-5">
+                            <div class = "d-flex align-items-center justify-content-between mb-2">
+                                <h3 class = "title-sm op-08 ls-heading">People you may know <span class = "fw-4">associated with ANAA</span></h3>
+                                <a href = "#" class = "title-link fw-6 p-text-lg ls-para d-flex align-items-center justify-content-between">
+                                    <span class = "text-uppercase text-primary-v1 op-06">View All</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class = "members-items people-slider">
+                            <div class = "members-item-wrapper">
+                                <div class = "card-profile">
+                                    <div class = "card-profile-img img-cover mx-auto">
+                                        <img src = "assets/images/pg_members/members-1.png" alt = "">
+                                    </div>
+                                    <div class = "card-profile-body text-center mt-3">
+                                        <p class = "p-text-base text-dark fw-7 ls-heading mb-0">Ananta Poudyal</p>
+                                        <p class = "p-text-base fw-4 ls-heading text-dark mb-0">Masters of International Relations</p>
+                                        <p class = "p-text-base fw-4 ls-heading text-dark">Monash University (2012 - 2014)</p>
+                                        <button type = "button" class = "btn-rounded btn-rounded-primary mt-3">View Profile</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class = "members-item-wrapper">
+                                <div class = "card-profile">
+                                    <div class = "card-profile-img img-cover mx-auto">
+                                        <img src = "assets/images/pg_members/members-1.png" alt = "">
+                                    </div>
+                                    <div class = "card-profile-body text-center mt-3">
+                                        <p class = "p-text-base text-dark fw-7 ls-heading mb-0">Ananta Poudyal</p>
+                                        <p class = "p-text-base fw-4 ls-heading text-dark mb-0">Masters of International Relations</p>
+                                        <p class = "p-text-base fw-4 ls-heading text-dark">Monash University (2012 - 2014)</p>
+                                        <button type = "button" class = "btn-rounded btn-rounded-primary mt-3">View Profile</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class = "members-item-wrapper">
+                                <div class = "card-profile">
+                                    <div class = "card-profile-img img-cover mx-auto">
+                                        <img src = "assets/images/pg_members/members-1.png" alt = "">
+                                    </div>
+                                    <div class = "card-profile-body text-center mt-3">
+                                        <p class = "p-text-base text-dark fw-7 ls-heading mb-0">Ananta Poudyal</p>
+                                        <p class = "p-text-base fw-4 ls-heading text-dark mb-0">Masters of International Relations</p>
+                                        <p class = "p-text-base fw-4 ls-heading text-dark">Monash University (2012 - 2014)</p>
+                                        <button type = "button" class = "btn-rounded btn-rounded-primary mt-3">View Profile</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class = "members-item-wrapper">
+                                <div class = "card-profile">
+                                    <div class = "card-profile-img img-cover mx-auto">
+                                        <img src = "assets/images/pg_members/members-1.png" alt = "">
+                                    </div>
+                                    <div class = "card-profile-body text-center mt-3">
+                                        <p class = "p-text-base text-dark fw-7 ls-heading mb-0">Ananta Poudyal</p>
+                                        <p class = "p-text-base fw-4 ls-heading text-dark mb-0">Masters of International Relations</p>
+                                        <p class = "p-text-base fw-4 ls-heading text-dark">Monash University (2012 - 2014)</p>
+                                        <button type = "button" class = "btn-rounded btn-rounded-primary mt-3">View Profile</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
+            <!-- events -->
+            <section class = "sc-events px-3">
+                <div class = "container">
+                    <div class = "events-content">
+                        <div class = "sc-top-info mb-4">
+                            <div class = "sc-top-info-line"></div>
+                            <div class = "sc-top-info-text fw-8">Who are we ?</div>
+                        </div>
+
+                        <div class = "d-flex align-items-center justify-content-between mb-2">
+                            <h3 class = "title-lg text-dark">Stay in touch</h3>
+                            <a href = "#" class = "title-link fw-6 p-text-lg ls-para d-flex align-items-center justify-content-between">
+                                <span>View All</span>
+                                <span class = "ms-2 title-link-icon p-text-sm text-navy-blue">
+                                    <i class = "fas fa-chevron-right"></i>
+                                    <i class = "fas fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class = "events-items events-slider">
+                            <div class = "events-item-wrapper">
+                                <div class = "events-item">
+                                    <div class = "events-item-img">
+                                        <h4 class = "text-white events-item-img-text title-sm fw-8">ChampaDevi Hiking Event (IAC)</h4>
+                                        <img src = "assets/images/pg_index/event-img.png" alt = "">
+                                    </div>
+                                    <div class = "events-item-text">
+                                        <div class = "d-flex align-items-center flex-wrap pills-group">
+                                            <div class = "pills-item fs-13 text-black-05 fw-6 border-dashed-black-05 me-3 font-notosans">Text</div>
+    
+                                            <div class = "pills-item border-dashed-amber">
+                                                <span class = "pills-item-icon fs-13 text-amber">
+                                                    <i class = "fas fa-hourglass"></i>
+                                                </span>
+                                                <span class = "fs-13 text-amber fw-6 ms-1 font-notosans">Expired</span>
+                                            </div>
+                                        </div>
+                                        <div class = "events-item-title">
+                                            <h3 class = "op-09 ls-05">ChampaDevi Hiking Event (IAC)</h3>
+                                        </div>
+                                        <div class = "events-item-info">
+                                            <div class = "info-item d-grid align-items-center mb-1">
+                                                <span class = "info-item-icon d-inline-block">
+                                                    <img src = "assets/images/icons/calendar.svg" alt = "">
+                                                </span>
+                                                <span class = "info-item-text fw-6 text-granite-gray p-text-sm ms-1">22nd December 2022</span>
+                                            </div>
+    
+                                            <div class = "info-item align-items-center mb-1">
+                                                <span class = "info-item-icon">
+                                                    <img src = "assets/images/icons/location.svg" alt = "">
+                                                </span>
+                                                <span class = "info-item-text fw-6 text-granite-gray p-text-sm ms-1">Hyatt Regency, taragaun Boudhha</span>
+                                            </div>
+                                        </div>
+    
+                                        <button type = "button" class = "btn-outline btn-outline-gray84-lt events-item-btn fw-6">Text</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class = "events-item-wrapper">
+                                <div class = "events-item">
+                                    <div class = "events-item-img">
+                                        <h4 class = "text-white events-item-img-text title-sm fw-8">ChampaDevi Hiking Event (IAC)</h4>
+                                        <img src = "assets/images/pg_index/event-img.png" alt = "">
+                                    </div>
+                                    <div class = "events-item-text">
+                                        <div class = "d-flex align-items-center flex-wrap pills-group">
+                                            <div class = "pills-item fs-13 text-black-05 fw-6 border-dashed-black-05 me-3 font-notosans">Conference</div>
+    
+                                            <div class = "pills-item border-dashed-malachite">
+                                                <span class = "pills-item-icon fs-13 text-malachite">
+                                                    <i class = "fas fa-hourglass"></i>
+                                                </span>
+                                                <span class = "fs-13 text-malachite fw-6 ms-1 font-notosans">Text</span>
+                                            </div>
+                                        </div>
+                                        <div class = "events-item-title">
+                                            <h3 class = "op-09 ls-05">ChampaDevi Hiking Event (IAC)</h3>
+                                        </div>
+                                        <div class = "events-item-info">
+                                            <div class = "info-item d-grid align-items-center mb-1">
+                                                <span class = "info-item-icon d-inline-block">
+                                                    <img src = "assets/images/icons/calendar.svg" alt = "">
+                                                </span>
+                                                <span class = "info-item-text fw-6 text-granite-gray p-text-sm ms-1">22nd December 2022</span>
+                                            </div>
+    
+                                            <div class = "info-item align-items-center mb-1">
+                                                <span class = "info-item-icon">
+                                                    <img src = "assets/images/icons/location.svg" alt = "">
+                                                </span>
+                                                <span class = "info-item-text fw-6 text-granite-gray p-text-sm ms-1">Hyatt Regency, taragaun Boudhha</span>
+                                            </div>
+                                        </div>
+    
+                                        <button type = "button" class = "btn-outline btn-outline-malachite events-item-btn fw-6">Reserve Seat</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class = "events-item-wrapper">
+                                <div class = "events-item">
+                                    <div class = "events-item-img">
+                                        <h4 class = "text-white events-item-img-text title-sm fw-8">ChampaDevi Hiking Event (IAC)</h4>
+                                        <img src = "assets/images/pg_index/event-img.png" alt = "">
+                                    </div>
+                                    <div class = "events-item-text">
+                                        <div class = "d-flex align-items-center flex-wrap pills-group">
+                                            <div class = "pills-item fs-13 text-black-05 fw-6 border-dashed-black-05 me-3 font-notosans">Text</div>
+    
+                                            <div class = "pills-item border-dashed-amber">
+                                                <span class = "pills-item-icon fs-13 text-amber">
+                                                    <i class = "fas fa-hourglass"></i>
+                                                </span>
+                                                <span class = "fs-13 text-amber fw-6 ms-1 font-notosans">Expired</span>
+                                            </div>
+                                        </div>
+                                        <div class = "events-item-title">
+                                            <h3 class = "op-09 ls-05">ChampaDevi Hiking Event (IAC)</h3>
+                                        </div>
+                                        <div class = "events-item-info">
+                                            <div class = "info-item d-grid align-items-center mb-1">
+                                                <span class = "info-item-icon d-inline-block">
+                                                    <img src = "assets/images/icons/calendar.svg" alt = "">
+                                                </span>
+                                                <span class = "info-item-text fw-6 text-granite-gray p-text-sm ms-1">22nd December 2022</span>
+                                            </div>
+    
+                                            <div class = "info-item align-items-center mb-1">
+                                                <span class = "info-item-icon">
+                                                    <img src = "assets/images/icons/location.svg" alt = "">
+                                                </span>
+                                                <span class = "info-item-text fw-6 text-granite-gray p-text-sm ms-1">Hyatt Regency, taragaun Boudhha</span>
+                                            </div>
+                                        </div>
+    
+                                        <button type = "button" class = "btn-outline btn-outline-gray84-lt events-item-btn fw-6">Text</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class = "events-item-wrapper">
+                                <div class = "events-item">
+                                    <div class = "events-item-img">
+                                        <h4 class = "text-white events-item-img-text title-sm fw-8">ChampaDevi Hiking Event (IAC)</h4>
+                                        <img src = "assets/images/pg_index/event-img.png" alt = "">
+                                    </div>
+                                    <div class = "events-item-text">
+                                        <div class = "d-flex align-items-center flex-wrap pills-group">
+                                            <div class = "pills-item fs-13 text-black-05 fw-6 border-dashed-black-05 me-3 font-notosans">Text</div>
+    
+                                            <div class = "pills-item border-dashed-amber">
+                                                <span class = "pills-item-icon fs-13 text-amber">
+                                                    <i class = "fas fa-hourglass"></i>
+                                                </span>
+                                                <span class = "fs-13 text-amber fw-6 ms-1 font-notosans">Expired</span>
+                                            </div>
+                                        </div>
+                                        <div class = "events-item-title">
+                                            <h3 class = "op-09 ls-05">ChampaDevi Hiking Event (IAC)</h3>
+                                        </div>
+                                        <div class = "events-item-info">
+                                            <div class = "info-item d-grid align-items-center mb-1">
+                                                <span class = "info-item-icon d-inline-block">
+                                                    <img src = "assets/images/icons/calendar.svg" alt = "">
+                                                </span>
+                                                <span class = "info-item-text fw-6 text-granite-gray p-text-sm ms-1">22nd December 2022</span>
+                                            </div>
+    
+                                            <div class = "info-item align-items-center mb-1">
+                                                <span class = "info-item-icon">
+                                                    <img src = "assets/images/icons/location.svg" alt = "">
+                                                </span>
+                                                <span class = "info-item-text fw-6 text-granite-gray p-text-sm ms-1">Hyatt Regency, taragaun Boudhha</span>
+                                            </div>
+                                        </div>
+    
+                                        <button type = "button" class = "btn-outline btn-outline-gray84-lt events-item-btn fw-6">Text</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of events -->
 
             <!-- footer -->
             <footer class = "footer">

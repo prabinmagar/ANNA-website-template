@@ -49,6 +49,16 @@
 .title-link{
     color: map-get($colors, 'clr-navy-blue')!important;
     font-family: $font-family-notosans;
+
+    span{
+        @include transition-default;
+    }
+
+    &:hover{
+        span{
+            @include opacity(1);
+        }
+    }
 }
 
 .title-box{

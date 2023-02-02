@@ -52,15 +52,21 @@
 }
 
 // keywords section
-.sc-keywords{
-    .keywords-list{
-        .keyword-item{
-            @include bg-color(#E0E2E8);
-            @include py(8px);
-            @include px(16px);
-            @include border-radius(4px);
-            @include mx(10px);
-            @include my(9px);
+.keywords-list{
+    .keyword-item{
+        @include bg-color(#E0E2E8);
+        @include py(8px);
+        @include px(16px);
+        @include border-radius(4px);
+        @include mx(10px);
+        @include my(9px);
+
+        &:first-child{
+            @include flush--left;
+        }
+
+        @include breakpoint-down(sm){
+            @include mx(4px);
         }
     }
 }

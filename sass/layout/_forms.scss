@@ -61,3 +61,32 @@
         }
     }
 }
+
+// personal update form
+.form-check{
+    margin-right: 12px;
+    @include px(12px);
+
+    @include breakpoint-up(lg){
+        @include px(24px);
+    }
+}
+
+.form-element{
+    @include my(12px);
+}
+
+.form-control, .form-select{
+    @include border(rgba(48, 50, 61, 0.2), 2px);
+    height: 46px!important;
+    @include border-radius(4px!important);
+
+    @include breakpoint-down(lg){
+        height: 44px;
+    }
+
+    @include breakpoint-down(sm){
+        height: 42px;
+    }
+}
+

@@ -112,6 +112,35 @@ $(document).ready(function(){
       ]
     });
 
+    $('.people-slider').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerPadding: '16.5px',
+      responsive: [
+        {
+          breakpoint: 1320,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
+    });
+
     $('.preview-thumbnails').slick({
       dots: false,
       infinite: true,
@@ -173,5 +202,12 @@ $(document).ready(function(){
     lightbox.option({
       'resizeDuration': 200,
       'wrapAround': true
-    })
+    });
+
+    $( '#multiple-select-field' ).select2( {
+      theme: "bootstrap-5",
+      width: $( this ).data( 'width' ) ? $( this ).data( 'width' ) : $( this ).hasClass( 'w-100' ) ? '100%' : 'style',
+      placeholder: $( this ).data( 'placeholder' ),
+      closeOnSelect: false,
+    });
 })

@@ -750,6 +750,7 @@
 // display
 @mixin d-none{ display: none!important; }
 @mixin d-block{ display: block!important; }
+@mixin d-inline-block{display: inline-block;}
 @mixin d-inline-block{ display: inline-block!important;}
 @mixin d-inline-flex{display: inline-flex!important;}
 
@@ -893,4 +894,9 @@
         backface-visibility: hidden;
     }
     perspective: $perspective;
+}
+
+// overflow
+@mixin overflow-hidden{
+    overflow: hidden;
 }
