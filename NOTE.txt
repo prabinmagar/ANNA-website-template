@@ -1,0 +1,1 @@
+You can't put a pseudo element in an input element, but can put in shadow element, like a placeholder! To make it work in other browsers, use :-moz-placeholder , ::-moz-placeholder and :-ms-input-placeholder in different selectors.

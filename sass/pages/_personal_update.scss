@@ -19,6 +19,7 @@
                 @include bg-color(map-get($colors, 'clr-white'));
                 @include border-r-circle;
                 @include pos-absolute(null, 0px!important, 0, null);
+                @include transition-default;
 
                 img{
                     width: 24px;
@@ -34,16 +35,44 @@
                     @include bg-color(#216BCA);
                     @include border-r-circle;
                 }
+
+                &:hover{
+                    transform: scale(1.05);
+                }
             }
         }
     }
 
     .update-form-title{
         color: #30323D;
-        margin-bottom: 24px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+
+        @include breakpoint-down(lg){
+            margin-bottom: 12px;
+        }
+    
+        @include breakpoint-down(sm){
+            margin-bottom: 8px;
+        }
     }
 
-    .personal-update-right{
+    .personal-update-btn{
+        @include bg-color(#0864D9);
+        min-width: 360px;
+        border-color: #0864D9;
+        @include transition-default;
 
+        &:hover{
+            @include bg-color(#0755B8);
+        }
+
+        @include breakpoint-down(xs){
+            min-width: 100%;
+        }
     }
+}
+
+#img-upload-input{
+    visibility: hidden;
 }

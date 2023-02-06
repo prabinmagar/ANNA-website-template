@@ -74,6 +74,18 @@
 
 .form-element{
     @include my(12px);
+
+    @include breakpoint-down(lg){
+        @include my(10px);
+    }
+
+    @include breakpoint-down(sm){
+        @include my(8px);
+    }
+
+    @include breakpoint-down(xs){
+        @include my(6px);
+    }
 }
 
 .form-control, .form-select{
@@ -86,7 +98,16 @@
     }
 
     @include breakpoint-down(sm){
-        height: 42px;
+        height: 38px!important;
     }
 }
 
+.form-control, .select2-search__field{
+    @include input-placeholder{
+        @include p-text-sm;
+    }
+}
+
+textarea.form-control{
+    height: 160px!important;
+}

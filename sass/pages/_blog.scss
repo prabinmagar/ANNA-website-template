@@ -15,3 +15,67 @@
         }
     }
 }
+
+.sc-blogs-single{
+    .content-stylings{
+        @include border(rgba(38, 38, 38, 0.2));
+        @include border-radius(8px);
+        @include p-all(16px);
+
+        img:first-of-type{
+            @include border-radius(8px);
+        }
+
+        p, a, ul, blockquote{
+            @include p-text-sm;
+            @include font-w(400);
+            letter-spacing: 0.08em;
+
+            &:first-of-type{
+                margin-top: 32px;
+            }
+        }
+        ul{
+            list-style-type: disc;
+            margin-left: 24px;
+
+            li{
+                margin: 10px 0;
+            }
+        }
+
+        blockquote{
+            font-style: italic;
+        }
+    }
+
+    .blogs-aside{
+        @include border(rgba(38, 38, 38, 0.2));
+        @include border-radius(8px);
+        @include p-all(16px);
+
+        &-items{
+            & > div{
+                margin-bottom: 8px;
+            }
+        }
+
+        &-item{
+            box-shadow: 0.626223px 0.626223px 2.50489px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+            @include border-radius(5.00978px);
+            @include overflow-hidden;
+
+            &-img{
+                height: 140px;
+
+                @include breakpoint-down(lg){
+                    height: 200px;
+                }
+
+                @include breakpoint-down(xs){
+                    height: 180px;
+                }
+            }
+        }
+    }
+}

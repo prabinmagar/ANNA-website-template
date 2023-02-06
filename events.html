@@ -12,8 +12,6 @@
         <link rel = "stylesheet" href = "node_modules/slick-carousel/slick/slick-theme.css">
         <link rel = "stylesheet" href = "node_modules/slick-carousel/slick/slick.css">
         <link rel = "stylesheet" href = "node_modules/lightbox2/dist/css/lightbox.css">
-        <link rel = "stylesheet" href = "node_modules/select2/dist/css/select2.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
         <!-- links to custom styles -->
         <link rel="stylesheet" href="assets/css/main.css">
         <style>
@@ -52,12 +50,15 @@
                                             <span class = "fw-5 p-text-sm text-dark d-block">9851063582</span>
                                         </div>
                                     </li>
-                                    <li class = "navbar-top-info-item navbar-top-profile-item">
-                                        <span class = "info-icon icon-base fs-xx-sm img-cover">
-                                            <img src = "assets/images/icons/profile-image.png" alt = "">
+                                    <li class = "navbar-top-info-item">
+                                        <span class = "info-icon icon-base fs-xx-sm">
+                                            <i class="fa-solid fa-user"></i>
                                         </span>
                                         <div class = "info-text">
-                                            <span class = "fw-5 p-text-sm text-dark">Ananta Poudyal</span>
+                                            <span class = "fw-5 p-text-sm text-dark">Member</span>
+                                            <span class = "fs-13 ms-2">
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </span>
                                         </div>
                                     </li>
                                 </ul>
@@ -137,158 +138,200 @@
             </nav>
             <!-- navbar section -->
 
-            <section class = "sc-personal-update px-3">
+            <!-- events -->
+            <section class = "sc-events px-3 pg-events">
                 <div class = "container">
-                    <form>
-                        <div class = "personal-update-content row">
-                            <div class = "personal-update-left col-lg-6 pe-lg-3 pe-xl-4 pe-xxl-5">
-                                <div class = "update-img mb-5">
-                                    <div class = "update-img-wrapper">
-                                        <img src = "assets/images/icons/profile-image.png" alt = "" id = "img-upload-preview">
-                                    </div>
-                                    <input type = "file" accept = "image/*" id = "img-upload-input">
-                                    <button type = "button" class = "img-upload-btn d-flex align-items-center justify-content-center" id = "img-upload-btn">
-                                        <img src = "assets/images/icons/gallery-export.svg" alt = "">
-                                    </button>
-                                </div>
-
-                                <div class = "update-form-title font-notosans fw-6 p-text-lg">Personal Details</div>
-                                <div class = "form-element">
-                                    <label for = "" class = "form-label font-notosans fw-5 p-text-sm">Title</label>
-                                    <div class = "form-radio-list d-flex flex-wrap px-3">
-                                        <div class = "form-check">
-                                            <input class="form-check-input" type="radio" value="" id="title-dr" name = "title">
-                                            <label class="form-check-label p-text-sm" for="title-dr">Dr.</label>
-                                        </div>
-                                        <div class = "form-check">
-                                            <input class="form-check-input" type="radio" value="" id="title-prof" name = "title">
-                                            <label class="form-check-label p-text-sm" for="title-prof">Prof.</label>
-                                        </div>
-                                        <div class = "form-check">
-                                            <input class="form-check-input" type="radio" value="" id="title-mr" name = "title">
-                                            <label class="form-check-label p-text-sm" for="title-mr">Mr.</label>
-                                        </div>
-                                        <div class = "form-check">
-                                            <input class="form-check-input" type="radio" value="" id="title-ms" name = "title">
-                                            <label class="form-check-label p-text-sm" for="title-ms">Ms.</label>
-                                        </div>
-                                        <div class = "form-check">
-                                            <input class="form-check-input" type="radio" value="" id="title-mrs" name = "title">
-                                            <label class="form-check-label p-text-sm" for="title-mrs">Mrs.</label>
+                    <div class = "events-content">
+                        <h3 class = "title-base text-dark text-center">Events</h3>
+                        <div class = "events-items my-0 row">
+                            <div class = "col-lg-6 col-xxl-4 mb-4">
+                                <div class = "events-item-wrapper">
+                                    <div class = "events-item-top" style = "background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/images/pg_events/events-img-1.png') center/cover no-repeat;">
+                                        <div class = "events-item-top-text">
+                                            <h4 class = "text-white p-text-sm fw-8 ls-05">International <span class = "p-text-base d-block">Alumni Conference (IAC)</span></h4>
+                                            <p class = "fs-13 font-firasans text-white fw-6 ls-05">Led by Ananta poudyal, <span class = "text-amber text-sunglow">President of Nepal ANAA</span></p>
+                                            <p class = "fs-14 font-firasans fw-6 ls-05 text-white mb-0">2nd December 2022</p>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class = "form-element">
-                                    <label for = '' class = "form-label font-notosans fw-5 p-text-sm">Full Name</label>
-                                    <input type = "text" class = "form-control" placeholder="John doe" id = "" name = "">
-                                </div>
-
-                                <div class = "form-element-group row">
-                                    <div class = "form-element col-sm-6">
-                                        <label for = '' class = "form-label font-notosans fw-5 p-text-sm">Email</label>
-                                        <input type = "email" class = "form-control" placeholder="" id = "" name = "">
+                                    <div class = "events-item border-top-malachite pb-3">
+                                        <div class = "events-item-text">
+                                            <div class = "events-item-title mb-0">
+                                                <h3 class = "op-09 ls-05 p-text-base">IAC Kathmandu December 2022</h3>
+                                            </div>
+                                            <div class = "d-flex align-items-center flex-wrap pills-group">
+                                                <div class = "pills-item fs-13 text-primary-v1 fw-6 border-dashed-primary-v1 me-3 font-notosans">Conference</div>
+        
+                                                <div class = "pills-item border-dashed-malachite">
+                                                    <span class = "pills-item-icon fs-13 text-malachite">
+                                                        <i class="fa-solid fa-ticket"></i>
+                                                    </span>
+                                                    <span class = "fs-13 text-malachite fw-6 ms-1 font-notosans">Tickets available</span>
+                                                </div>
+                                            </div>
+                                            <div class = "events-item-info mt-3">
+                                                <div class = "info-item d-grid align-items-center mb-1">
+                                                    <span class = "info-item-icon d-inline-block">
+                                                        <img src = "assets/images/icons/calendar.svg" alt = "">
+                                                    </span>
+                                                    <span class = "info-item-text fw-4 text-dark p-text-sm ms-1 fs-12 mt-1">22nd December 2022</span>
+                                                </div>
+        
+                                                <div class = "info-item align-items-center mb-1">
+                                                    <span class = "info-item-icon">
+                                                        <img src = "assets/images/icons/location.svg" alt = "">
+                                                    </span>
+                                                    <span class = "info-item-text fw-4 text-dark p-text-sm ms-1 fs-12 mt-1">Hyatt Regency, taragaun Boudhha</span>
+                                                </div>
+                                            </div>
+        
+                                            <button type = "button" class = "btn-outline btn-outline-malachite events-item-btn fw-6">Reserve Seat</button>
+                                        </div>
                                     </div>
-                                    <div class = "form-element col-sm-6">
-                                        <label for = '' class = "form-label font-notosans fw-5 p-text-sm">Phone Number</label>
-                                        <input type = "text" class = "form-control" placeholder="" id = "" name = "">
-                                    </div>
-                                </div>
-
-                                <div class = "form-element">
-                                    <label for = '' class = "form-label font-notosans fw-5 p-text-sm">Current Address/ Location</label>
-                                    <input type = "text" class = "form-control" placeholder="" id = "" name = "">
-                                </div>
-
-                                <div class = "form-element">
-                                    <label for = '' class = "form-label font-notosans fw-5 p-text-sm">Interest</label>
-                                    <select class = "form-select" id="multiple-select-field" data-placeholder="Choose anything" multiple>
-                                        <option>Hiking</option>
-                                        <option>Writing</option>
-                                        <option>Volunteering and community involvement</option>
-                                        <option>Travel</option>
-                                    </select>
-                                </div>
-                            </div>
-    
-                            <div class = "personal-update-right col-lg-6 ps-lg-3 ps-xl-4 ps-xxl-5">
-                                <div class = "update-form-title font-notosans fw-6 p-text-lg">Education Details</div>
-                                <div class = "form-element">
-                                    <label for = '' class = "form-label font-notosans fw-5 p-text-sm">University / Education Provider</label>
-                                    <input type = "text" class = "form-control" placeholder="" id = "" name = "">
-                                </div>
-
-                                <div class = "form-element-group row">
-                                    <div class = "form-element col-sm-6">
-                                        <label for = '' class = "form-label font-notosans fw-5 p-text-sm">Course Department</label>
-                                        <select class = "form-select">
-                                            <option>Liberal Arts</option>
-                                            <option>Liberal Arts</option>
-                                            <option>Liberal Arts</option>
-                                            <option>Liberal Arts</option>
-                                        </select>
-                                    </div>
-                                    <div class = "form-element col-sm-6">
-                                        <label for = '' class = "form-label font-notosans fw-5 p-text-sm">Course Department</label>
-                                        <select class = "form-select">
-                                            <option>Liberal Arts</option>
-                                            <option>Liberal Arts</option>
-                                            <option>Liberal Arts</option>
-                                            <option>Liberal Arts</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class = "form-element-group row">
-                                    <div class = "form-element col-sm-6">
-                                        <label for = '' class = "form-label font-notosans fw-5 p-text-sm">University / Education Provider</label>
-                                        <input type = "text" class = "form-control" placeholder="" id = "" name = "">
-                                    </div>
-                                    <div class = "form-element col-sm-6">
-                                        <label for = '' class = "form-label font-notosans fw-5 p-text-sm">University / Education Provider</label>
-                                        <input type = "date" class = "form-control" placeholder="" id = "" name = "">
-                                    </div>
-                                </div>
-
-                                <div class = "update-form-title font-notosans fw-6 p-text-lg">Professional Details</div>
-                                <div class = "form-element">
-                                    <label for = '' class = "form-label font-notosans fw-5 p-text-sm">Current or former employer</label>
-                                    <input type = "text" class = "form-control" placeholder="" id = "" name = "">
-                                </div>
-                                <div class = "form-element-group row">
-                                    <div class = "form-element col-sm-6">
-                                        <label for = '' class = "form-label font-notosans fw-5 p-text-sm">Position</label>
-                                        <input type = "text" class = "form-control" placeholder="" id = "" name = "">
-                                    </div>
-                                    <div class = "form-element col-sm-6">
-                                        <label for = '' class = "form-label font-notosans fw-5 p-text-sm">Specialization</label>
-                                        <input type = "text" class = "form-control" placeholder="" id = "" name = "">
-                                    </div>
-                                </div>
-
-                                <div class = "update-form-title font-notosans fw-6 p-text-lg">Socials</div>
-                                <div class = "form-element">
-                                    <label for = '' class = "form-label font-notosans fw-5 p-text-sm">Twitter</label>
-                                    <input type = "text" class = "form-control" placeholder="" id = "" name = "">
-                                </div>
-                                <div class = "form-element">
-                                    <label for = '' class = "form-label font-notosans fw-5 p-text-sm">Linkedin</label>
-                                    <input type = "text" class = "form-control" id = "" name = "" placeholder="">
                                 </div>
                             </div>
 
-                            <div class = "personal-update-about">
-                                <label for = '' class = "form-label font-notosans fw-5 p-text-sm">About Me</label>
-                                <textarea class = "form-control"></textarea>
+                            <div class = "col-lg-6 col-xxl-4 mb-4">
+                                <div class = "events-item-wrapper">
+                                    <div class = "events-item-top" style = "background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/images/pg_events/events-img-2.png') center/cover no-repeat;">
+                                        <div class = "events-item-top-text">
+                                            <h4 class = "text-white p-text-sm fw-8 ls-05">International <span class = "p-text-base d-block">Alumni Conference (IAC)</span></h4>
+                                            <p class = "fs-13 font-firasans text-white fw-6 ls-05">Led by Dr. Ram Hari Aryal, <span class = "text-amber text-sunglow">President of Nepal ANAA</span></p>
+                                            <p class = "fs-14 font-firasans fw-6 ls-05 text-white mb-0">2nd December 2022</p>
+                                        </div>
+                                    </div>
+                                    <div class = "events-item border-top-amber pb-3">
+                                        <div class = "events-item-text">
+                                            <div class = "events-item-title mb-0">
+                                                <h3 class = "op-09 ls-05 p-text-base">IAC Kathmandu December 2022</h3>
+                                            </div>
+                                            <div class = "d-flex align-items-center flex-wrap pills-group">
+                                                <div class = "pills-item fs-13 text-black-05 fw-6 border-dashed-black-05 me-3 font-notosans">Conference</div>
+        
+                                                <div class = "pills-item border-dashed-amber">
+                                                    <span class = "pills-item-icon fs-13 text-amber">
+                                                        <i class = "fas fa-hourglass"></i>
+                                                    </span>
+                                                    <span class = "fs-13 text-amber fw-6 ms-1 font-notosans">Expired</span>
+                                                </div>
+                                            </div>
+                                            <div class = "events-item-info mt-3">
+                                                <div class = "info-item d-grid align-items-center mb-1">
+                                                    <span class = "info-item-icon d-inline-block">
+                                                        <img src = "assets/images/icons/calendar.svg" alt = "">
+                                                    </span>
+                                                    <span class = "info-item-text fw-4 text-dark p-text-sm ms-1 fs-12 mt-1">22nd December 2022</span>
+                                                </div>
+        
+                                                <div class = "info-item align-items-center mb-1">
+                                                    <span class = "info-item-icon">
+                                                        <img src = "assets/images/icons/location.svg" alt = "">
+                                                    </span>
+                                                    <span class = "info-item-text fw-4 text-dark p-text-sm ms-1 fs-12 mt-1">Hyatt Regency, taragaun Boudhha</span>
+                                                </div>
+                                            </div>
+        
+                                            <button type = "button" class = "btn-outline btn-outline-gray84-lt events-item-btn fw-6">Reserve Seat</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class = "d-flex justify-content-end mt-4">
-                                <button type = "button" class = "btn-bordered personal-update-btn text-white font-firasans p-text-x-lg fw-7 text-center">Complete Update</button>
+                            <div class = "col-lg-6 col-xxl-4 mb-4">
+                                <div class = "events-item-wrapper">
+                                    <div class = "events-item-top" style = "background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/images/pg_events/events-img-4.png') center/cover no-repeat;">
+                                        <div class = "events-item-top-text">
+                                            <h4 class = "text-white p-text-sm fw-8 ls-05">International <span class = "p-text-base d-block">Alumni Conference (IAC)</span></h4>
+                                            <p class = "fs-13 font-firasans text-white fw-6 ls-05">Led by Ananta poudyal, <span class = "text-amber text-sunglow">President of Nepal ANAA</span></p>
+                                            <p class = "fs-14 font-firasans fw-6 ls-05 text-white mb-0">2nd December 2022</p>
+                                        </div>
+                                    </div>
+                                    <div class = "events-item border-top-malachite pb-3">
+                                        <div class = "events-item-text">
+                                            <div class = "events-item-title mb-0">
+                                                <h3 class = "op-09 ls-05 p-text-base">IAC Kathmandu December 2022</h3>
+                                            </div>
+                                            <div class = "d-flex align-items-center flex-wrap pills-group">
+                                                <div class = "pills-item fs-13 text-primary-v1 fw-6 border-dashed-primary-v1 me-3 font-notosans">Conference</div>
+        
+                                                <div class = "pills-item border-dashed-malachite">
+                                                    <span class = "pills-item-icon fs-13 text-malachite">
+                                                        <i class="fa-solid fa-ticket"></i>
+                                                    </span>
+                                                    <span class = "fs-13 text-malachite fw-6 ms-1 font-notosans">Tickets available</span>
+                                                </div>
+                                            </div>
+                                            <div class = "events-item-info mt-3">
+                                                <div class = "info-item d-grid align-items-center mb-1">
+                                                    <span class = "info-item-icon d-inline-block">
+                                                        <img src = "assets/images/icons/calendar.svg" alt = "">
+                                                    </span>
+                                                    <span class = "info-item-text fw-4 text-dark p-text-sm ms-1 fs-12 mt-1">22nd December 2022</span>
+                                                </div>
+        
+                                                <div class = "info-item align-items-center mb-1">
+                                                    <span class = "info-item-icon">
+                                                        <img src = "assets/images/icons/location.svg" alt = "">
+                                                    </span>
+                                                    <span class = "info-item-text fw-4 text-dark p-text-sm ms-1 fs-12 mt-1">Hyatt Regency, taragaun Boudhha</span>
+                                                </div>
+                                            </div>
+        
+                                            <button type = "button" class = "btn-outline btn-outline-malachite events-item-btn fw-6">Reserve Seat</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class = "col-lg-6 col-xxl-4 mb-4">
+                                <div class = "events-item-wrapper">
+                                    <div class = "events-item-top" style = "background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/images/pg_events/events-img-1.png') center/cover no-repeat;">
+                                        <div class = "events-item-top-text">
+                                            <h4 class = "text-white p-text-sm fw-8 ls-05">International <span class = "p-text-base d-block">Alumni Conference (IAC)</span></h4>
+                                            <p class = "fs-13 font-firasans text-white fw-6 ls-05">Led by Dr. Ram Hari Aryal, <span class = "text-amber text-sunglow">President of Nepal ANAA</span></p>
+                                            <p class = "fs-14 font-firasans fw-6 ls-05 text-white mb-0">2nd December 2022</p>
+                                        </div>
+                                    </div>
+                                    <div class = "events-item border-top-amber pb-3">
+                                        <div class = "events-item-text">
+                                            <div class = "events-item-title mb-0">
+                                                <h3 class = "op-09 ls-05 p-text-base">IAC Kathmandu December 2022</h3>
+                                            </div>
+                                            <div class = "d-flex align-items-center flex-wrap pills-group">
+                                                <div class = "pills-item fs-13 text-black-05 fw-6 border-dashed-black-05 me-3 font-notosans">Conference</div>
+        
+                                                <div class = "pills-item border-dashed-amber">
+                                                    <span class = "pills-item-icon fs-13 text-amber">
+                                                        <i class = "fas fa-hourglass"></i>
+                                                    </span>
+                                                    <span class = "fs-13 text-amber fw-6 ms-1 font-notosans">Expired</span>
+                                                </div>
+                                            </div>
+                                            <div class = "events-item-info mt-3">
+                                                <div class = "info-item d-grid align-items-center mb-1">
+                                                    <span class = "info-item-icon d-inline-block">
+                                                        <img src = "assets/images/icons/calendar.svg" alt = "">
+                                                    </span>
+                                                    <span class = "info-item-text fw-4 text-dark p-text-sm ms-1 fs-12 mt-1">22nd December 2022</span>
+                                                </div>
+        
+                                                <div class = "info-item align-items-center mb-1">
+                                                    <span class = "info-item-icon">
+                                                        <img src = "assets/images/icons/location.svg" alt = "">
+                                                    </span>
+                                                    <span class = "info-item-text fw-4 text-dark p-text-sm ms-1 fs-12 mt-1">Hyatt Regency, taragaun Boudhha</span>
+                                                </div>
+                                            </div>
+        
+                                            <button type = "button" class = "btn-outline btn-outline-gray84-lt events-item-btn fw-6">Reserve Seat</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </section>
+            <!-- end of events -->
 
             <!-- footer -->
             <footer class = "footer">
@@ -309,13 +352,13 @@
                                         <p class = "text-uppercase p-text-sm fw-5 ls-para footer-top-item-title">members</p>
                                         <ul class = "footer-nav-links">
                                             <li>
-                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-base op-09">Executive board</a>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-sm op-09">Executive board</a>
                                             </li>
                                             <li>
-                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-base op-09">Alumni Registration</a>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-sm op-09">Alumni Registration</a>
                                             </li>
                                             <li>
-                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-base op-09">Members/Alumni</a>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-sm op-09">Members/Alumni</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -326,10 +369,10 @@
                                         <p class = "text-uppercase p-text-sm fw-5 ls-para footer-top-item-title">australia links</p>
                                         <ul class = "footer-nav-links">
                                             <li>
-                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-base op-09">Australia Global Alumni</a>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-sm op-09">Australia Global Alumni</a>
                                             </li>
                                             <li>
-                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-base op-09">Australian Embassy Nepal</a>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-sm op-09">Australian Embassy Nepal</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -340,16 +383,16 @@
                                         <p class = "text-uppercase p-text-sm fw-5 ls-para footer-top-item-title">for students</p>
                                         <ul class = "footer-nav-links">
                                             <li>
-                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-base op-09">Study in Australia</a>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-sm op-09">Study in Australia</a>
                                             </li>
                                             <li>
-                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-base op-09">Australian University</a>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-sm op-09">Australian University</a>
                                             </li>
                                             <li>
-                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-base op-09">Student Visa</a>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-sm op-09">Student Visa</a>
                                             </li>
                                             <li>
-                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-base op-09">Job Portal</a>
+                                                <a href = "#" class = "footer-nav-link text-dark fw-5 p-text-sm op-09">Job Portal</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -442,7 +485,6 @@
         <script src = "node_modules/slick-carousel/slick/slick.js"></script>
         <script src = "node_modules/lightbox2/dist/js/lightbox.js"></script>
         <script src = "node_modules/jquery-mousewheel/jquery.mousewheel.js"></script>
-        <script src = "node_modules/select2/dist/js/select2.full.js"></script>
         <!-- links to custom scripts -->
         <script src = "assets/js/script.js"></script>
     </body>

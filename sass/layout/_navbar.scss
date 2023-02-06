@@ -70,6 +70,7 @@
         .nav-items-list{
             .nav-item{
                 margin-right: 32px;
+                @include transition-default;
 
                 .nav-link{
                     color: map-get($map: $colors, $key: "clr-white");
@@ -80,6 +81,10 @@
 
                     &-icon{
                         margin-left: 4px;
+                    }
+
+                    @include breakpoint-down(lg){
+                        text-align: left;
                     }
                 }
 
@@ -95,6 +100,7 @@
                         @include border(white(0.1));
                         @include border-radius(4px);
                         @include d-none;
+                        cursor: default;
 
                         &-item{
                             text-align: left;
@@ -111,6 +117,11 @@
 
                         &-show{
                             @include d-block;
+                        }
+
+                        @include breakpoint-down(lg){
+                            @include pos-relative;
+                            margin-top: 10px;
                         }
                     }
                 }

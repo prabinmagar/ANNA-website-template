@@ -206,3 +206,37 @@ $btn-primary-bgColor--highlight: darken(map-get($colors, 'clr-primary'), 10%);
         }
     }
 }
+
+.btn-form{
+    @include box(100%, 54px);
+    @include border(map-get($colors, 'clr-navy-blue')!important);
+    @include border-radius(4px);
+
+    @include breakpoint-down(lg){
+        height: 48px;
+    }
+
+    @include breakpoint-down(sm){
+        height: 44px;
+    }
+}
+
+.btn-primary-filled{
+    @include bg-color(map-get($colors, 'clr-navy-blue')!important);
+    color: map-get($colors, 'clr-white');
+    &:hover{
+        color: opacity(map-get($colors, 'clr-navy-blue'), 0.8);
+        @include bg-color(map-get($colors, 'clr-white')!important);
+    }
+}
+
+.btn-primary-outline{
+    @include bg-color(map-get($colors, 'clr-white'));
+
+    &:hover{
+        @include bg-color(map-get($colors, 'clr-navy-blue')!important);
+        span{
+            color: map-get($colors, 'clr-white')!important;
+        }
+    }
+}

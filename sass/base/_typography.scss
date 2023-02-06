@@ -133,3 +133,13 @@ $p--xxx-lg: (
         }
     }
 }
+
+@mixin p-text-sm{
+    @extend %text;
+    @include font-s(map-get($font-size, "xx-sm"));
+    @each $breakpoint, $fs-size in $p--sm{
+        @include breakpoint-up($breakpoint){
+            @include font-s(map-get($font-size, $fs-size));
+        }
+    }
+}

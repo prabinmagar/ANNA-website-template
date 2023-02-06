@@ -1,0 +1,32 @@
+.pg-events{
+    .events-item-wrapper{
+        .events-item-top{
+            @include py(48px);
+            @include px(22px);
+            @include pos-relative;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+            @include overflow-hidden;
+            z-index: -1!important;
+
+            &-text{
+                
+                z-index: 5;
+            }
+        }
+
+        .events-item{
+            @include mx(21px);
+            margin-top: -44px;
+            @include bg-color(map-get($colors, 'clr-white'));
+
+            &-title{
+                @include flush--top;
+            }
+
+            &-text{
+                @include py(10px);
+            }
+        }
+    }
+}

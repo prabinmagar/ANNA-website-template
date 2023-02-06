@@ -46,6 +46,8 @@ $(document).ready(function(){
       });
     });
 
+    // REMOVING THE ACTIVE DROPDOWN ON OUTSIDE CLICK
+
     // scroll on mouse wheel
     const mouseWheel = $('.intro-scroll-content');
     $(mouseWheel).mousewheel(function(event){
@@ -210,4 +212,37 @@ $(document).ready(function(){
       placeholder: $( this ).data( 'placeholder' ),
       closeOnSelect: false,
     });
-})
+
+    // pesonal update form image upload
+    $('#img-upload-btn').on('click', function(){
+      $('#img-upload-input').trigger('click');
+    });
+
+    $('#img-upload-input').on('change', function(event){
+      const file = event.target.files[0];
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+
+      reader.onloadend = () => {
+        $('#img-upload-preview').attr('aria-label', file.name);
+        $('#img-upload-preview').attr('src', reader.result);
+      }
+    });
+
+    // eye toggle in form button
+    const toggleBtnOne = $('.form-element-password .eye-icon');
+    const passwordElemOne = $('.password-input');
+
+    const togglePasswordVisibility = (toggleBtn, passwordElem) => {
+      const type = passwordElem.attr('type') === "password" ? "text" : "password";
+      passwordElem.attr('type', type);
+      if(type === "text") toggleBtn.html('<i class = "fa-solid fa-eye"></i>');
+      else toggleBtn.html('<i class = "fa-solid fa-eye-slash"></i>');
+      console.log(type);
+    }
+
+    toggleBtnOne.on('click', () => togglePasswordVisibility(toggleBtnOne, passwordElemOne));
+
+    
+
+});

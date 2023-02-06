@@ -1,0 +1,29 @@
+.sc-form{
+    .form-content{
+        &-left{
+            img{
+                max-width: 506px;
+            }
+        }
+    }
+}
+
+.form-element-password{
+    @include pos-relative;
+
+    .eye-icon{
+        @include pos-absolute(null, 10px, 10px, null);
+
+        @include breakpoint-down(sm){
+            bottom: 6.5px;
+        }
+    }
+}
+
+.form-separator{
+    &-line{
+        width: 100%;
+        height: 1px;
+        @include bg-color(#7C81A0);
+    }
+}
