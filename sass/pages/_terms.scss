@@ -1,0 +1,48 @@
+.sc-terms{
+    .terms-content{
+        @include py(32px);
+
+        .terms-list{
+            list-style-type: decimal;
+            margin-left: 24px;
+
+            li{
+                @include font-w(400);
+                letter-spacing: $paragraph-letter-spacing;
+                @include p-text-sm;
+                font-family: $font-family-firasans;
+                margin-bottom: 6px;
+            }
+            
+        }
+    }
+
+    .terms-agreement-form{
+        button{
+            @include bg-transparent;
+            box-shadow: none;
+            @include border(opacity(#838383, 0.7), 2px);
+            min-width: 184px;
+            @include transition-default;
+
+            .btn-text{
+                @include font-w(600);
+                letter-spacing: $paragraph-letter-spacing;
+                color: #838383;
+                @include transition-default;
+            }
+
+            @include breakpoint-down(xs){
+                width: 100%;
+            }
+
+            &:hover{
+                @include bg-color(map-get($colors, 'clr-dark')!important);
+                border-color: map-get($colors, 'clr-dark');
+                .btn-text{
+                    color: map-get($colors, 'clr-white');
+                }
+            }
+        }
+    }
+}

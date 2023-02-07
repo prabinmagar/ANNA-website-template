@@ -1,0 +1,63 @@
+
+.interests-top{
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    @include py(36px);
+
+    .interests-list{
+        .interests-list-item{
+            @include px(16px);
+            @include py(5px);
+            @include my(4px);
+            @include border(map-get($colors, 'clr-granite-gray'), 1px, all, dashed);
+            @include border-radius(4px);
+            margin-right: 22px;
+        }
+    }
+}
+
+.sc-interests{
+    .interests-btns-group{
+        .btn{
+            @include py(8px);
+            @include px(25px);
+            @include border-radius(6px);
+
+            &:nth-child(1){
+                @include bg-color(map-get($colors, 'clr-platinum'));
+                margin-right: 20px;
+            }
+
+            &:nth-child(2){
+                .btn-icon{
+                    width: 9px;
+                }
+
+                &:hover{
+                    @include bg-color(map-get($colors, 'clr-primary-v1')!important);
+                }
+            }
+
+            &-icon{
+                width: 16px;
+                @include d-inline-block;
+            }
+        }
+    }
+
+    .interests-body{
+        &-img{
+            margin-top: -3px;
+            height: 331px;
+            overflow: hidden;
+
+            img{
+                object-position: center;
+            }
+        }
+
+        .content-stylings{
+            margin-top: 36px;
+            padding-bottom: 50px;
+        }
+    }
+}

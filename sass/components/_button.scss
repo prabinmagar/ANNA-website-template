@@ -166,6 +166,7 @@ $btn-primary-bgColor--highlight: darken(map-get($colors, 'clr-primary'), 10%);
     text-align: left;
     @include transition-default;
 }
+
 .btn-outline-gray84-lt{
     border: 0.65px solid #D6D6D6;
     color: map-get($colors, 'clr-gray84');
@@ -183,6 +184,24 @@ $btn-primary-bgColor--highlight: darken(map-get($colors, 'clr-primary'), 10%);
     &:hover{
         @include bg-color(map-get($colors, 'clr-malachite')!important);
         color: map-get($colors, 'clr-white')!important;
+    }
+}
+
+.btn-malachite{
+    @include py(7px);
+    @include px(15px);
+    min-width: 112px;
+    @include border-radius(2.6px);
+    cursor: pointer;
+    text-align: left;
+    @include transition-default;
+    border: 0.65px solid map-get($colors, 'clr-malachite');
+    color: map-get($colors, 'clr-white');
+    @include bg-color(map-get($colors, 'clr-malachite'));
+
+    &:hover{
+        @include bg-transparent;
+        color: map-get($colors, "clr-malachite");
     }
 }
 

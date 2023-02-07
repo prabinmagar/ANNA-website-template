@@ -242,7 +242,4 @@ $(document).ready(function(){
     }
 
     toggleBtnOne.on('click', () => togglePasswordVisibility(toggleBtnOne, passwordElemOne));
-
-    
-
 });

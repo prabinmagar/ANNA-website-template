@@ -39,4 +39,10 @@
             }
         }
     }
+
+    .slick-prev, .slick-next{
+        &::before{
+            color: #C2B9B9!important;
+        }
+    }
 }

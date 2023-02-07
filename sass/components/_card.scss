@@ -34,6 +34,11 @@
     &-img{
         height: 420px;
     }
+
+    &-body{
+        @include py(16px);
+        @include px(14px);
+    }
 }
 
 .card-profile{

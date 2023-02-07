@@ -34,22 +34,21 @@
             height: 50px;
             @include w-100;
             max-width: 100%;
+            border: 2px solid rgba(48, 50, 61, 0.2);
+            @include border-radius(5px);
 
             @include breakpoint-up(lg){
                 max-width: 312px;
             }
             
             &-text{
-                border-color: rgba(12, 10, 122, 0.2)!important;
-                border-right: 0;
+                height: 46px;
+                margin-right: -2px;
+                @include border-none;
             }
 
             .form-control{
-                border-left: 0;
-
-                &:focus{
-                    border-color:rgba(12, 10, 122, 0.2);
-                }
+                @include border-none;
             }
         }
 

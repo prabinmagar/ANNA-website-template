@@ -30,3 +30,23 @@
         }
     }
 }
+
+.pg-events-single{
+    .events-single-content{
+        @include border(rgba(38, 38, 38, 0.2));
+        @include border-radius(8px);
+        @include p-all(16px);
+
+        .events-single-right{
+            @include border-radius(4px);
+            @include overflow-hidden;
+        }
+
+        .events-single{
+            &-title{
+                @include font-w(800);
+                line-height: 1.35;
+            }
+        }
+    }
+}
