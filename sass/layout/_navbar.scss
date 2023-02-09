@@ -191,6 +191,7 @@
         @include font-s(22);
         cursor: pointer;
         @include transition-default;
+        margin-right: 5px;
 
         &:hover{
             color: map-get($colors, 'clr-primary');

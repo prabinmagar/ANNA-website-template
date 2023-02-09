@@ -10,7 +10,11 @@
 }
 
 .sc-index-about{
-    @include py(100px);
+    @include py(100px, 40px);
+
+    @include breakpoint-down(xs){
+        @include py(50px, 20px);
+    }
 
     .about-intro-text1{
         @include my(48px);
@@ -65,10 +69,19 @@
     }
 }
 
+.sc-intro-scroll-wrapper{
+    overflow-x: hidden
+}
+
 .sc-intro-scroll{
     @include py(80px);
 
+    @include breakpoint-down(xs){
+        @include py(0, 40px);
+    }
+
     .intro-scroll-content{
+        width: 100%!important;
         overflow-x: scroll;
         /* Hiddem scroll bar */
         scrollbar-width: none;  /* Firefox */
@@ -79,21 +92,30 @@
             display: none;
         }
     }
-
     
-
     .scroll-item{
         @include px(69px);
         border-right: 2px solid opacity(map-get($colors, 'clr-primary'), 0.3);
 
+        &:last-child{
+            @include border-none;
+        }
+
         &-value{
             @include font-s(200);
+
+            @media screen and (max-width: 992px){
+                @include font-s(60);
+            }
         }
 
         &-text{
-            color: map-get($colors, "clr-primary");
             @include font-s(46);
             margin-left: 69px;
+
+            @media screen and (max-width: 992px){
+                margin-left: 24px;
+            }
         }
     }
 }
@@ -110,6 +132,7 @@
 
     @include breakpoint-down(xs){
         min-height: calc(100vh + 200px);
+        padding-top: 30px;
     }
 
     .together-content{
@@ -144,8 +167,16 @@
 .sc-faculty{
     @include py(70px);
 
+    @include breakpoint-down(xs){
+        @include py(30px);
+    }
+
     .faculty-list-items{
         margin-top: 54px;
+
+        @include breakpoint-down(xs){
+            margin-top: 20px;
+        }
 
         .faculty-item{
             @include py(16px);
@@ -187,9 +218,16 @@
 .sc-events{
     @include py(50px);
 
+    @include breakpoint-down(xs){
+    }
+
     .events-items{
         margin-top: 30px;
         padding-top: 42px;
+
+        @include breakpoint-down(xs){
+            @include flush--top;
+        }
 
         .pills-item{
             @include p(5px, 10px, 5px, 10px);
@@ -270,8 +308,17 @@
 
 .sc-gallery{
     @include py(60px);
+
+    @include breakpoint-down(xs){
+        @include py(30px);
+    }
+
     .gallery-items{
         margin-top: 40px;
+        @include breakpoint-down(xs){
+            margin-top: 16px;
+        }
+
         .gallery-item{
             @include border-radius(7.68px);
             overflow:  hidden;
@@ -312,6 +359,10 @@
 .sc-blogs{
     @include py(60px);
     overflow-x: hidden;
+
+    @include breakpoint-down(xs){
+        @include py(30px);
+    }
 
     .blogs-items{
         @include mx(-16.5px);

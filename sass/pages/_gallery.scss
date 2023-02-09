@@ -44,5 +44,8 @@
         &::before{
             color: #C2B9B9!important;
         }
+        
+        @include pos-absolute(50%, null, null, null);
+        transform: translateY(-50%);
     }
 }

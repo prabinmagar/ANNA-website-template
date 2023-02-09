@@ -66,6 +66,10 @@
     min-width: 273px;
     @include d-inline-flex;
     @include flex-center;
+
+    @include breakpoint-up(md){
+        width: auto!important;
+    }
 }
 
 .title-underline{

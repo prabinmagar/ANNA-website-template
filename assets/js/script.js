@@ -148,7 +148,7 @@ $(document).ready(function(){
       infinite: true,
       speed: 300,
       slidesToShow: 5,
-      slidesToScroll: 1,
+      slidesToScroll: 2,
       responsive: [
         {
           breakpoint: 1320,
@@ -174,12 +174,6 @@ $(document).ready(function(){
             slidesToShow: 2,
           }
         },
-        {
-          breakpoint: 450,
-          settings: {
-            slidesToShow: 1,
-          }
-        }
       ]
     });
 
@@ -242,4 +236,7 @@ $(document).ready(function(){
     }
 
     toggleBtnOne.on('click', () => togglePasswordVisibility(toggleBtnOne, passwordElemOne));
+
+    // horizontal scroller
+    // $('.my-paroller').paroller({ });
 });

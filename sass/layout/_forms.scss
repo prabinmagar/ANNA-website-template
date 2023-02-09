@@ -93,12 +93,9 @@
     @include border-radius(4px!important);
 
     @include breakpoint-down(lg){
-        height: 44px;
+        height: 46px;
     }
 
-    @include breakpoint-down(sm){
-        height: 38px!important;
-    }
 }
 
 .form-control, .select2-search__field{

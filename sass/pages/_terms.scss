@@ -1,10 +1,12 @@
 .sc-terms{
     .terms-content{
-        @include py(32px);
+        @include breakpoint-up(lg){
+            @include py(32px);
+        }
 
         .terms-list{
             list-style-type: decimal;
-            margin-left: 24px;
+            padding-left: 24px;
 
             li{
                 @include font-w(400);

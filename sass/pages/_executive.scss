@@ -2,6 +2,10 @@
     padding-top: 70px;
     padding-bottom: 40px;
 
+    @include breakpoint-down(xs){
+        @include py(40px, 10px);
+    }
+
     .members-items{
         & > div{
             @include my(16px);
